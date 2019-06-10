@@ -1,0 +1,33 @@
+{
+	"name": "web",
+	"version": "1.0.0",
+	"devDependencies": {
+		"@babel/core": "^7.4.3",
+		"@babel/preset-env": "^7.4.3",
+		"autoprefixer": "^9.5.1",
+		"babel-core": "^6.26.3",
+		"babel-preset-env": "^1.7.0",
+		"css-mqpacker": "^7.0.0",
+		"cssnano": "^4.1.10",
+		"del": "3.0.0",
+		"gulp": "3.9.1",
+		"gulp-babel": "^8.0.0",
+		"gulp-clean": "^0.4.0",
+		"gulp-concat": "2.6.1",
+		"gulp-notify": "3.0.0",
+		"gulp-postcss": "^8.0.0",
+		"gulp-rename": "1.2.2",
+		"gulp-sass": "3.1.0",
+		"gulp-sourcemaps": "2.6.1",
+		"gulp-uglify": "3.0.1",
+		"gulp-uglify-es": "^1.0.4",
+		"hugo-cli": "0.10.0",
+		"postcss-css-variables": "^0.12.0",
+		"pump": "3.0.0",
+		"run-sequence": "2.2.0",
+		"sort-css-media-queries": "^1.4.3"
+	},
+	"dependencies": {
+		"babel-plugin-loop-optimizer": "^1.4.1"
+	}
+}

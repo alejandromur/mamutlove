@@ -1,0 +1,8 @@
+{
+  "src": "../src/",
+  "dest": "../static/",
+  "scriptsFiles": [
+    "../src/js/anchors.js",
+    "../src/js/utilities.js"
+  ]
+}
