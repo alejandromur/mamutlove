@@ -1,0 +1,266 @@
+.chapter-7 {
+  position: relative;
+  overflow: hidden;
+
+  > .wrapper {
+    position: relative;
+  }
+
+  .blue-yellow-left {
+    --factor: 1.5;
+    width: calc(243px * var(--factor));
+    height: calc(345px * var(--factor));
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    @include mq($from: tablet) {
+      --factor: 2;
+      transform: translate(-15rem, 4rem);
+    }
+    @include mq($from: desktop) {
+      transform: translate(-8rem, 4rem);
+    }
+    @include mq($from: wrapper_max_width) {
+      transform: translate(0, 4rem);
+    }
+  }
+
+  .blue-right {
+    --factor: 0;
+    width: calc((358px / 2) * var(--factor));
+    height: calc((444px / 2) * var(--factor));
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: z(default);
+    transform: translate3d(0, 30rem, 0);
+
+    @include mq($from: tablet) {
+      --factor: 2;
+      transform: translate3d(0, 26rem, 0);
+    }
+    @include mq($from: wrapper_max_width) {
+      --factor: 3.5;
+      transform: translate3d(0, 17rem, 0);
+    }
+  }
+
+  .blue {
+    --factor: 0;
+    width: calc((897px / 2) * var(--factor));
+    height: calc((514px / 2) * var(--factor));
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, -4rem);
+    z-index: z(default);
+
+    @include mq($from: tablet) {
+      transform: translate(-50%, -8rem);
+    }
+
+    .quiz-ended & {
+      --factor: 1.5;
+
+      @include mq($from: tablet) {
+        --factor: 2;
+      }
+    }
+  }
+
+  .bulb-cubes {
+    --factor: 0;
+    width: calc((169px / 2) * var(--factor));
+    height: calc((457px / 2) * var(--factor));
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: z(default);
+    background: {
+      // color: $dev;
+      image: url(../images/backgrounds/bulb-cubes.svg);
+    }
+
+    @include mq($from: tablet) {
+      --factor: 2;
+      transform: translate(-7rem, 2rem);
+    }
+    @include mq($from: desktop) {
+      transform: translate(1rem, 5rem);
+    }
+    @include mq($from: wrapper_max_width) {
+      transform: translate(10rem, 6rem);
+    }
+  }
+
+  .man-working {
+    --factor: 0;
+    width: calc((180px / 2) * var(--factor));
+    height: calc((373px / 2) * var(--factor));
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: z(default);
+    background: {
+      // color: $dev;
+      image: url(../images/backgrounds/man-working.svg);
+    }
+
+    @include mq($from: tablet) {
+      --factor: 2;
+      transform: translate(7rem, 27rem);
+    }
+    @include mq($from: desktop) {
+      transform: translate(0, 27rem);
+    }
+    @include mq($from: wrapper_max_width) {
+      transform: translate(-7rem, 27rem);
+    }
+  }
+
+  .stuff-12 {
+    width: calc((56px / 2) * var(--factor));
+    height: calc((179px / 2) * var(--factor));
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: z(default);
+    transform: translate(1rem, -19rem);
+    background: {
+      // color: $dev;
+      image: url(../images/backgrounds/stuff-12.svg);
+    }
+
+    @include mq($from: mobile_landscape) {
+      transform: translate(3rem, -25rem);
+    }
+
+    .quiz-ended & {
+      --factor: 2;
+
+      @include mq($from: tablet) {
+        --factor: 0;
+      }
+    }
+  }
+
+  .stuff-13 {
+    width: calc((138px / 2) * var(--factor));
+    height: calc((118px / 2) * var(--factor));
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: z(default);
+    background: {
+      // color: $dev;
+      image: url(../images/backgrounds/stuff-13.svg);
+    }
+    transform: translate(0, -10rem);
+
+    @include mq($from: mobile_landscape) {
+      transform: translate(-2rem, -10rem);
+    }
+
+    .quiz-ended & {
+      --factor: 2;
+
+      @include mq($from: tablet) {
+        --factor: 0;
+      }
+    }
+  }
+
+  .stuff-10 {
+    --factor: 0;
+    width: calc((327px / 2) * var(--factor));
+    height: calc((780px / 2) * var(--factor));
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: z(default);
+    background: {
+      // color: $dev;
+      image: url(../images/backgrounds/stuff-10.svg);
+    }
+
+    @include mq($from: tablet) {
+      transform: translate(-6rem, -12rem);
+    }
+    @include mq($from: desktop) {
+      transform: translate(0rem, -12rem);
+    }
+    @include mq($from: wrapper_max_width) {
+      transform: translate(8rem, -12rem);
+    }
+
+    .quiz-ended & {
+      @include mq($from: tablet) {
+        --factor: 2;
+      }
+    }
+  }
+
+  .stuff-11 {
+    --factor: 0;
+    width: calc((475px / 2) * var(--factor));
+    height: calc((718px / 2) * var(--factor));
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: z(default);
+    background: {
+      // color: $dev;
+      image: url(../images/backgrounds/stuff-11.svg);
+    }
+
+    @include mq($from: tablet) {
+      transform: translate(6rem, -7rem);
+    }
+    @include mq($from: desktop) {
+      transform: translate(0rem, -7rem);
+    }
+    @include mq($from: wrapper_max_width) {
+      transform: translate(-8rem, -7rem);
+    }
+
+    .quiz-ended & {
+      @include mq($from: tablet) {
+        --factor: 2;
+      }
+    }
+  }
+
+  .robot-wrapper {
+    display: none;
+    max-width: 34rem;
+    margin: 5rem auto;
+    text-align: center;
+    transform: translate(0, 1rem);
+    transition: transform $medium $delay $ease-in;
+
+    @include mq($from: tablet) {
+      margin: 10rem 0;
+    }
+
+    // STATES
+    &.is-visible {
+      display: block;
+      transform: none;
+      transition: transform $medium $ease-in;
+    }
+  }
+
+  .robot-dialog {
+    max-width: 32rem;
+    margin: 0 auto 1rem;
+
+    .r-s {
+      animation: animate-shadow 3000ms $ease-in infinite;
+    }
+
+    .r-f {
+      animation: animate-figure 3000ms $ease-in infinite;
+    }
+  }
+}

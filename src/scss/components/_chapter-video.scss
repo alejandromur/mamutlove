@@ -1,0 +1,47 @@
+.chapter__video {
+  width: 100vw;
+  transform: translate(-1rem, 0);
+  position: relative;
+  overflow: hidden;
+
+  @include mq($from: inner_wrapper) {
+    // TODO: calcular esto
+    transform: translateX(calc(((100vw - 544px) / 2) * -1));
+  }
+  @include mq($from: desktop) {
+    // TODO: calcular esto
+    width: var(--max-width);
+    transform: translateX(
+      calc(((var(--max-width) - var(--wrapper-max-width)) / 2) * -1)
+    );
+  }
+
+  // FAKING BOX-SHADOW
+  &::before,
+  &::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 1rem;
+    position: absolute;
+    left: 0;
+    z-index: z(default);
+    opacity: 0.37;
+    background: var(--shadow-gradient);
+  }
+
+  &::before {
+    top: 0;
+  }
+
+  &::after {
+    bottom: 0;
+    transform: rotate(180deg);
+  }
+
+  // CHILDS
+  > video {
+    width: 100%;
+    height: auto;
+  }
+}

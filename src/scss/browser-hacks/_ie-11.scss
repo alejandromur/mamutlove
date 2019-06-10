@@ -1,0 +1,55 @@
+.ie-11 {
+  .home__content {
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: calc(100vh - 16rem);
+    max-height: calc(100vh - 16rem);
+  }
+
+  .home__footer {
+    @include mq($from: tablet) {
+      height: 18rem;
+
+      > svg {
+        transform: translate(-50%, -200px);
+      }
+    }
+  }
+
+  // CHAPTER 1
+  .chapter-1 {
+    .blue-top {
+      @include mq($from: wrapper_max_width) {
+        width: 85.375rem;
+        height: 57.5rem;
+      }
+    }
+  }
+
+  // CHAPTER 2
+  .chapter-2 {
+    .chapter__image--dk {
+      @include mq($from: tablet) {
+        height: 44.125rem;
+      }
+    }
+  }
+
+  // CHAPTER 3
+  .chapter-3 {
+    .chapter__svg {
+      @include mq($from: tablet) {
+        height: 37.25rem;
+      }
+    }
+  }
+
+  // CHAPTER 7
+  .chapter-7 {
+    .robot-dialog {
+      @include mq($from: tablet) {
+        height: 41.25rem;
+      }
+    }
+  }
+}

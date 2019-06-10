@@ -1,0 +1,103 @@
+// CONFIG BUTTONS STYLES
+// It takes the KEY to build the selector
+$BUTTONS: (
+  primary: (
+    textColor: --button-primary-text-color,
+    backgroundColor: --button-primary-background-color,
+    borderColor: --button-primary-border-color,
+    textHoverColor: --button-primary-hover-text-color,
+    backgroundHoverColor: --button-primary-hover-background-color,
+    borderHoverColor: --button-primary-hover-border-color,
+  ),
+  secondary: (
+    textColor: --button-secondary-text-color,
+    backgroundColor: --button-secondary-background-color,
+    borderColor: --button-secondary-border-color,
+    textHoverColor: --button-secondary-hover-text-color,
+    backgroundHoverColor: --button-secondary-hover-background-color,
+    borderHoverColor: --button-secondary-hover-border-color,
+  ),
+);
+
+// APPLIES THE STYLES TO THE ELEMENT
+@mixin buttonStyles(
+  $textColor,
+  $backgroundColor,
+  $borderColor,
+  $textHoverColor,
+  $backgroundHoverColor,
+  $borderHoverColor
+) {
+  $textColor: var($textColor);
+  $backgroundColor: var($backgroundColor);
+  $borderColor: var($borderColor);
+  $textHoverColor: var($textHoverColor);
+  $backgroundHoverColor: var($backgroundHoverColor);
+  $borderHoverColor: var($borderHoverColor);
+
+  color: $textColor;
+  border-color: $borderColor;
+  background-color: $backgroundColor;
+  transition: all $fast $linear;
+
+  &:focus,
+  &:hover {
+    color: $textHoverColor;
+    border-color: $borderHoverColor;
+    background-color: $backgroundHoverColor;
+  }
+
+  &:active {
+    color: var(--button-active-text-color);
+    border-color: var(--button-active-border-color);
+    background-color: var(--button-active-background-color);
+  }
+}
+
+// RESET STYLES
+%button-base {
+  font-size: 1rem;
+  font-weight: $bold;
+  color: transparent;
+  display: inline-block;
+  background: {
+    image: url(../images/icons/button-border-glow.svg);
+    repeat: no-repeat;
+    position: 0 0;
+    color: transparent;
+  }
+  border: 0.125rem solid;
+  border-radius: 0.5625rem;
+  outline: none;
+  cursor: pointer;
+  padding: 0.5rem 1.5rem;
+  line-height: 1.4;
+  text-decoration: none;
+  text-transform: uppercase;
+  position: relative;
+  overflow: hidden;
+
+  &[disabled] {
+    pointer-events: none;
+    opacity: 0.6;
+  }
+}
+
+// DEFAULT CLASS
+.button {
+  @extend %button-base;
+}
+
+// CREATES THE MODIFERS
+@each $class, $styles in $BUTTONS {
+  .button--#{$class} {
+    @include buttonStyles(
+      map-get($styles, 'textColor'),
+      map-get($styles, 'backgroundColor'),
+      map-get($styles, 'borderColor'),
+      map-get($styles, 'textHoverColor'),
+      map-get($styles, 'backgroundHoverColor'),
+      map-get($styles, 'borderHoverColor')
+    );
+  }
+}

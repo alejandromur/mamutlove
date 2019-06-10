@@ -1,0 +1,29 @@
+.robot {
+  position: relative;
+  z-index: 1;
+  transform: translate(-2.5rem, -2.5rem);
+
+  cursor: pointer;
+
+  > * {
+    pointer-events: none;
+  }
+
+  &-dialog {
+    opacity: 1;
+    transform: none;
+    transition: all $slow;
+  }
+
+  .modal.is-visible + & {
+    .robot-dialog {
+      opacity: 0;
+      transform: translateY(-0.25rem);
+      transition: all $slow;
+
+      .dialog-wrapper--left & {
+        transform: translateY(-0.25rem) scaleX(-1) translateX(-10rem);
+      }
+    }
+  }
+}

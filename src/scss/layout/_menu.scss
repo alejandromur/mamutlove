@@ -1,0 +1,217 @@
+body.menu-is-open {
+  @include mq($until: mobile_landscape) {
+    height: 100vh;
+    overflow: hidden;
+  }
+}
+
+.menu {
+  padding: 1.5rem 1.5rem 0 0;
+  text-align: right;
+  position: relative;
+  z-index: z(default);
+  pointer-events: all;
+
+  @include mq($until: mobile_landscape) {
+    text-align: left;
+  }
+  @include mq($from: tablet) {
+    padding: 2rem 2rem 0 0;
+  }
+
+  &::before {
+    @include mq($from: tablet) {
+      content: '';
+      display: block;
+      width: 187px;
+      height: 200px;
+      background: {
+        image: url(../images/backgrounds/white.svg);
+        repeat: no-repeat;
+        position: 0 0;
+      }
+      position: absolute;
+      top: 0;
+      right: 0;
+      z-index: (z(default) - 1);
+      filter: drop-shadow(0 4px 2px rgba(0, 0, 0, 0.12));
+    }
+  }
+
+  &::after {
+    @include mq($until: mobile_landscape) {
+      width: 100vw;
+      height: 100vh;
+      border-radius: 0;
+      left: 0;
+      right: 0;
+      background-color: transparent;
+      transform: translate(calc(-100% + 4.3rem), -2rem);
+      transition: transform $medium ($delay * 3), background-color $slow;
+    }
+
+    content: '';
+    display: block;
+    width: 15rem;
+    height: 36rem;
+    background: transparent;
+    border-radius: 2rem 0 0 2rem;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: (z(default) - 1);
+    pointer-events: none;
+    transform: scale(1, 0.866) skew(0, -30deg) translate(0, 0rem);
+    transition: all $slow $linear;
+    will-change: filter;
+    filter: drop-shadow(0 4px 2px rgba(0, 0, 0, 0));
+  }
+
+  // STATES
+  &.is-open {
+    @include mq($until: mobile_landscape) {
+      .menu__button__icon {
+        display: none;
+      }
+
+      .menu__button__icon--close {
+        display: block;
+      }
+    }
+
+    &::after {
+      @include mq($until: mobile_landscape) {
+        background-color: var(--menu-background-mobile-color);
+        transform: translate(calc(-100% + 4.3rem), 0);
+      }
+
+      opacity: 1;
+      pointer-events: all;
+      background-color: var(--white-color);
+      transform: scale(1, 0.866) skew(0, -34deg) translate(0, -0.9rem);
+      filter: drop-shadow(0 4px 2px rgba(0, 0, 0, 0.12));
+    }
+
+    .menu__nav {
+      pointer-events: initial;
+
+      > li {
+        opacity: 1;
+        transform: translate(0, 0);
+      }
+    }
+
+    .menu__nav__link {
+      @include mq($until: mobile_landscape) {
+        font-size: 1rem;
+
+        &:not(.is-active) {
+          color: var(--white-color);
+        }
+      }
+    }
+  }
+
+  &__button {
+    padding: 0;
+    border: 0;
+    background-color: transparent;
+    position: relative;
+    z-index: z(default);
+
+    // INTERACTION
+    &:hover .menu-shadow,
+    &:hover .menu-figure {
+      transition: transform $slow;
+      transform: none;
+    }
+
+    &__icon {
+      display: block;
+      width: 2.8125rem;
+      height: 4.375rem;
+
+      &--close {
+        display: none;
+      }
+    }
+
+    .menu-shadow,
+    .menu-figure {
+      display: inline-block;
+      transition: transform $slow;
+    }
+
+    .menu-shadow {
+      transform: translate(0, -0.5rem);
+    }
+
+    .menu-figure {
+      transform: translate(0, 0.5rem);
+    }
+  }
+
+  &__nav {
+    width: 13.5rem;
+    padding-right: 2.5rem;
+    list-style-type: none;
+    position: absolute;
+    top: 120%;
+    right: 0;
+    z-index: z(default);
+    pointer-events: none;
+    counter-reset: navlink-counter;
+
+    @include mq($until: mobile_landscape) {
+      width: 100vw;
+      padding: 1.5rem;
+    }
+
+    > li {
+      opacity: 0;
+      transform: translate(0, -1rem);
+      transition: all $slow $ease-in;
+
+      &:first-child {
+        > a::before {
+          content: '';
+        }
+      }
+      &:not(:first-child) {
+        counter-increment: navlink-counter;
+      }
+
+      @for $i from 1 through 8 {
+        &:nth-child(#{$i}) {
+          transition-delay: $i * 35ms;
+        }
+      }
+    }
+
+    &__link {
+      display: inline-block;
+      padding: 0.375rem;
+      font-size: 0.8125rem;
+      color: var(--menu-text-color);
+      text-decoration: none;
+
+      &::before {
+        content: counter(navlink-counter) '. ';
+      }
+
+      // INTERACTIONS
+      &:hover,
+      &:focus {
+        color: var(--menu-active-text-color);
+      }
+
+      // STATES
+      &.is-active {
+        font-weight: $bold;
+        color: var(--primary-title-color);
+        background-color: var(--list-title-background-color);
+      }
+    }
+  }
+}

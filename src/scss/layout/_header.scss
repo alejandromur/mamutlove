@@ -1,0 +1,78 @@
+.site-header {
+  // display: none;
+  flex: 0 0 auto;
+  width: inherit;
+  position: fixed;
+  z-index: z(header);
+  pointer-events: none;
+
+  // STATES
+  // When scrolling down
+  &.is-scrolling {
+    .site-header__logo,
+    .course-title {
+      transform: scale(0.8);
+    }
+    .course-title {
+      transform: scale(0.8) translate(0, 4rem);
+      @include mq($from: tablet) {
+        transform: scale(1) translate(0, 3.5rem);
+      }
+      @include mq($from: desktop_large) {
+        transform: scale(1.2) translate(0, 2rem);
+      }
+    }
+  }
+
+  // CHILDS
+  > .wrapper {
+    max-width: var(--max-width);
+    display: flex;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+  }
+
+  &__logo {
+    // @include animate-show($duration: 500ms, $delay: 150ms);
+    display: inline-block;
+    width: 2.5rem;
+    height: 2.5rem;
+    padding: 1rem 1rem 0;
+    position: relative;
+    z-index: (z(default) + 1);
+    transform-origin: 0% 0%;
+    will-change: transform;
+    transition: transform $medium $linear;
+    pointer-events: all;
+
+    @include mq($from: tablet) {
+      padding: 2rem 2.5rem 0;
+    }
+
+    &::after {
+      content: '';
+      display: block;
+      width: 0;
+      height: 0;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: (z(default) - 2);
+      border-top: 10rem solid transparent;
+      border-left: 17rem solid var(--white-color);
+      border-bottom: 10rem solid transparent;
+      transform: translate(0, -12.5rem);
+
+      @include mq($from: tablet) {
+        transform: translate(0, -10.5rem);
+      }
+    }
+
+    &__figure {
+      width: 2.5rem;
+      height: 2.5rem;
+    }
+  }
+}

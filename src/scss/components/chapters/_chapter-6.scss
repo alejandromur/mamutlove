@@ -1,0 +1,140 @@
+.chapter-6 {
+  position: relative;
+  overflow: hidden;
+
+  @include mq($from: desktop) {
+    overflow: visible;
+  }
+
+  > .wrapper {
+    position: relative;
+
+    @include mq($from: desktop) {
+      overflow: hidden;
+    }
+  }
+
+  .chapter-header__image {
+    width: var(--image-max-width);
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    // --offset-image: calc(
+    //   (calc(var(--image-max-width) - var(--wrapper-max-width)) / 2) * -1
+    // );
+    // transform: translateX(var(--offset-image));
+  }
+
+  .chapter-content {
+    text-align: center;
+  }
+
+  .stuff-7 {
+    --factor: 0;
+    width: calc((195px / 2) * var(--factor));
+    height: calc((230px / 2) * var(--factor));
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: {
+      // color: $dev;
+      image: url(../images/backgrounds/stuff-7.svg);
+    }
+
+    @include mq($from: tablet) {
+      --factor: 2;
+      transform: translate3d(-5rem, 10rem, 0);
+    }
+    @include mq($from: desktop) {
+      transform: translate3d(2rem, 14rem, 0);
+    }
+    @include mq($from: wrapper_max_width) {
+      --factor: 2.25;
+      transform: translate3d(7rem, 16rem, 0);
+    }
+  }
+
+  .stuff-8 {
+    --factor: 0;
+    width: calc((174px / 2) * var(--factor));
+    height: calc((278px / 2) * var(--factor));
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: z(default);
+    background: {
+      // color: $dev;
+      image: url(../images/backgrounds/stuff-8.svg);
+    }
+
+    @include mq($from: tablet) {
+      --factor: 2;
+      transform: translate(6rem, -5rem);
+    }
+    @include mq($from: desktop) {
+      --factor: 2;
+      transform: translate(-5rem, -2rem);
+    }
+    @include mq($from: wrapper_max_width) {
+      transform: translate(-11rem, -7rem);
+    }
+  }
+
+  .yellow-left {
+    --factor: 1;
+    width: calc((446px / 2) * var(--factor));
+    height: calc((552px / 2) * var(--factor));
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    @include mq($from: tablet) {
+      --factor: 1.5;
+      transform: translate3d(0, 13rem, 0);
+    }
+    @include mq($from: desktop) {
+      --factor: 2;
+    }
+  }
+
+  .blue-right {
+    --factor: 0;
+    width: calc((358px / 2) * var(--factor));
+    height: calc((444px / 2) * var(--factor));
+    position: absolute;
+    bottom: 0;
+    right: 0;
+
+    @include mq($from: tablet) {
+      --factor: 1.5;
+    }
+    @include mq($from: desktop) {
+      --factor: 2.25;
+      transform: translate3d(0, 10rem, 0);
+    }
+    @include mq($from: wrapper_max_width) {
+      --factor: 2.875;
+      transform: translate3d(0, 7rem, 0);
+    }
+  }
+
+  .icons-play {
+    --factor: 0;
+    width: calc((238px / 2) * var(--factor));
+    height: calc((148px / 2) * var(--factor));
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transform: translate(-2rem, 0);
+
+    @include mq($from: tablet) {
+      --factor: 2;
+    }
+    @include mq($from: desktop) {
+      transform: translate(-11rem, 8rem);
+    }
+    @include mq($from: wrapper_max_width) {
+      transform: translate(-17rem, 2rem);
+    }
+  }
+}

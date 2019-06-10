@@ -1,0 +1,273 @@
+$tabWidth: 40rem;
+$tabInfoWidth: 38.5rem;
+
+.tab {
+  width: 100%;
+  max-width: $tabWidth;
+  padding-left: 1.25rem;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+  border-radius: 0.375rem 0.375rem 0 0.375rem;
+  border-bottom: 0.1875rem solid var(--tab-background-color);
+  border-right: 0.1875rem solid var(--tab-background-color);
+  background-color: var(--tab-background-color);
+  box-shadow: 0 0.25rem 0.625rem 0 hsla(0, 0%, 0%, 0.12);
+
+  // TODO: center layout
+  @include mq($from: tablet) {
+    width: $tabWidth;
+    max-width: initial;
+    overflow: hidden;
+    transform: translateX(
+      calc((calc(#{$tabWidth} - var(--wrapper-max-width)) / 2) * -1)
+    );
+  }
+
+  // CHILDS
+  &__scope {
+    @include mq($from: tablet) {
+      > div {
+        display: flex;
+        justify-content: space-between;
+        width: 32.1875rem;
+        height: 1.5rem;
+        margin-left: 4.8125rem;
+        font-size: 0.8125rem;
+        color: var(--tab-legend-color);
+      }
+
+      span {
+        flex: 1;
+        max-width: 15.625rem;
+        height: 1.5rem;
+        text-align: center;
+        line-height: 1.5rem;
+        overflow: hidden;
+        border-radius: 0.5rem 0.5rem 0 0;
+        background-color: var(--tab-background-color);
+
+        + span {
+          max-width: initial;
+          margin-left: 0.125rem;
+        }
+      }
+    }
+  }
+
+  &__row {
+    display: flex;
+    width: $tabInfoWidth;
+    background-color: var(--tab-content-background-color);
+
+    &__scope {
+      // @include mq($until: tablet) {
+      width: 511px;
+      display: flex;
+      color: var(--tab-legend-color);
+      background-color: var(--white-color);
+      margin-left: 105px;
+      position: relative;
+      z-index: 1;
+
+      &::before {
+        content: '';
+        display: inline-block;
+        width: 7.8125rem;
+        height: 1.5rem;
+        line-height: 1.5rem;
+        background-color: var(--white-color);
+        transform: translate(-100%, 0);
+        position: absolute;
+        z-index: 0;
+
+        @include mq($from: tablet) {
+          background-color: var(--tab-content-background-color);
+        }
+      }
+
+      span {
+        display: inline-block;
+        flex: 1;
+        flex: 1 0 50%;
+        max-width: 15.625rem;
+        height: 1.5rem;
+        text-align: center;
+        line-height: 1.5rem;
+        overflow: hidden;
+        border-radius: 0.5rem 0.5rem 0 0;
+        background-color: var(--tab-background-color);
+
+        + span {
+          max-width: initial;
+          border-radius: 0.5rem 0 0 0;
+          margin-left: 0.125rem;
+        }
+      }
+      // }
+    }
+
+    &__info-wrapper {
+      flex: 1 1 30rem;
+      padding: 0.625rem 0;
+      position: relative;
+      overflow: hidden;
+
+      &::after {
+        content: '- - - - - - - - - - - - - - - - - - - - - - - - - - - - -';
+        display: block;
+        width: 100%;
+        height: 0;
+        color: currentColor;
+        line-height: 0;
+        position: absolute;
+        left: 0.625rem;
+        bottom: 0.125rem;
+        z-index: z(default);
+      }
+
+      .tab__row__wrapper {
+        display: none;
+
+        // STATES
+        &.is-active {
+          display: flex;
+        }
+      }
+    }
+
+    &:last-child {
+      .tab__legend {
+        &::after {
+          display: none;
+        }
+      }
+
+      .tab__row__info-wrapper {
+        flex: 1 1 30rem;
+        position: relative;
+
+        &::after {
+          display: none;
+        }
+      }
+    }
+
+    &__buttons-wrapper {
+      flex: 1 1 30rem;
+
+      .tab__row__wrapper {
+        display: flex;
+        height: 100%;
+      }
+    }
+
+    &__col {
+      flex: 1 0 50%;
+      padding: 0 0.625rem;
+    }
+  }
+
+  &__legend {
+    flex: 0 0 6.5625rem;
+    max-width: 6.5625rem;
+    padding: 0.625rem 0.625rem 0.625rem 0;
+    color: var(--tab-legend-color);
+    text-align: right;
+    white-space: initial;
+    background-color: var(--tab-background-color);
+    position: relative;
+
+    &::after {
+      content: '- - - - - - -';
+      display: block;
+      width: 100%;
+      height: 0;
+      line-height: 0;
+      color: currentColor;
+      position: absolute;
+      right: 0.75rem;
+      bottom: 0.125rem;
+      z-index: z(default);
+    }
+  }
+
+  &__button {
+    flex: 1 1 0;
+    padding: 0.625rem;
+    font-size: 1rem;
+    font-weight: $bold;
+    text-align: left;
+    text-transform: uppercase;
+    color: var(--tab-button-inactive-color);
+    border: 0;
+    background-color: var(--tab-background-color);
+
+    // EXCEPTION
+    &:nth-child(3) {
+      margin-left: 0.125rem;
+    }
+
+    > span {
+      display: block;
+      font-size: 0.8125rem;
+      font-weight: $regular;
+      text-transform: none;
+      color: var(--tab-content-background-color);
+      pointer-events: none;
+    }
+
+    // STATES
+    &.is-active {
+      color: var(--tab-button-color);
+      background-color: var(--tab-content-background-color);
+      position: relative;
+
+      &::before {
+        content: '';
+        display: block;
+        width: 100%;
+        height: 0.25rem;
+        background-color: var(--tab-legend-color);
+        position: absolute;
+        left: 0;
+        top: 0;
+      }
+
+      > span {
+        color: inherit;
+      }
+    }
+  }
+
+  &__title {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: $bold;
+    color: var(--primary-text-color);
+    white-space: initial;
+  }
+
+  &__text {
+    margin: 0;
+    color: var(--primary-text-color);
+    white-space: initial;
+  }
+
+  &__icon {
+    height: 2.0625rem;
+    margin-top: 1.5rem;
+    text-align: center;
+
+    @include mq($from: tablet) {
+      display: none;
+    }
+
+    > svg {
+      width: 2.25rem;
+      height: 2.0625rem;
+      transform-origin: 50% 100%;
+      animation: swipe 3000ms infinite forwards;
+    }
+  }
+}

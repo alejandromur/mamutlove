@@ -1,0 +1,92 @@
+*,
+*:after,
+*:before {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  box-sizing: inherit;
+  font-family: inherit;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  text-rendering: optimizeLegibility;
+  font-family: $ff, Arial, sans-serif;
+  font-size: 1em;
+  line-height: 1.4;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: inherit;
+  font-weight: normal;
+  font-size: 100%;
+  color: var(--black-color);
+  line-height: 1.4;
+  min-height: 100vh;
+}
+
+abbr[title] {
+  border-bottom: 0;
+  text-decoration: none;
+}
+
+img,
+iframe,
+video {
+  vertical-align: middle;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+menu,
+ul,
+ol,
+li,
+dd {
+  padding: 0;
+  margin: 0;
+  list-style-position: outside;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+a {
+  color: var(--primary-color);
+  transition: color $medium $linear;
+
+  &:hover,
+  &:focus {
+    color: var(--secondary-color);
+  }
+}
+
+button:focus {
+  outline: none;
+}
+
+::-moz-selection {
+  color: var(--white-color);
+  background-color: var(--primary-color);
+}
+
+::selection {
+  color: var(--white-color);
+  background-color: var(--primary-color);
+}

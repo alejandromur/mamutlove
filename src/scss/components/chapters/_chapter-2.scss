@@ -1,0 +1,213 @@
+.chapter-2 {
+  position: relative;
+  overflow: hidden;
+  background: {
+    color: transparent;
+    image: url('../images/backgrounds/blue-left.svg');
+    repeat: no-repeat;
+    position: 0 2.5rem;
+    size: 18.5rem auto;
+  }
+
+  @include mq($from: tablet) {
+    background: {
+      color: transparent;
+      image: url('../images/backgrounds/blue-yellow-right.svg');
+      repeat: no-repeat;
+      position: 150% 7rem;
+      size: 50% auto;
+    }
+  }
+  @include mq($from: desktop) {
+    background: {
+      position: 120% 2rem;
+      size: 35rem auto;
+    }
+  }
+  @include mq($from: wrapper_max_width) {
+    background: {
+      position: 100% 2rem;
+    }
+  }
+
+  > .wrapper {
+    position: relative;
+  }
+
+  .chapter-header__video-cover {
+    max-width: 20rem;
+  }
+
+  .chapter__image {
+    &--mb {
+      max-width: 16rem;
+      margin-left: auto;
+      margin-right: auto;
+
+      @include mq($from: tablet) {
+        display: none;
+      }
+    }
+    &--dk {
+      display: none;
+
+      @include mq($from: tablet) {
+        display: block;
+        width: var(--image-max-width);
+        position: relative;
+        left: 50%;
+        transform: translate(-50%);
+      }
+    }
+  }
+
+  .blue-blue-left {
+    --factor: 0;
+    width: calc((475px / 2) * var(--factor));
+    height: calc((673px / 2) * var(--factor));
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    @include mq($from: tablet) {
+      --factor: 1;
+      transform: translate(-0.5rem, -40rem);
+    }
+    @include mq($from: desktop) {
+      --factor: 2;
+      transform: translate(-8rem, -13rem);
+    }
+    @include mq($from: wrapper_max_width) {
+      transform: translate(0, -13rem);
+    }
+  }
+
+  .blue-right {
+    --factor: 0;
+    width: calc((358px / 2) * var(--factor));
+    height: calc((444px / 2) * var(--factor));
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: z(default);
+
+    @include mq($from: desktop) {
+      --factor: 2;
+      transform: translate(0, -28rem);
+    }
+  }
+
+  .icons-play {
+    --factor: 0;
+    width: calc((238px / 2) * var(--factor));
+    height: calc((148px / 2) * var(--factor));
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(11rem, 32rem);
+
+    @include mq($from: tablet) {
+      --factor: 2;
+    }
+    @include mq($from: desktop) {
+      transform: translate(-3rem, 37rem);
+    }
+    @include mq($from: wrapper_max_width) {
+      transform: translate(-9rem, 37rem);
+    }
+  }
+
+  .stuff-3 {
+    --factor: 0;
+    width: calc((255px / 2) * var(--factor));
+    height: calc((301px / 2) * var(--factor));
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: {
+      // color: $dev;
+      image: url(../images/backgrounds/stuff-3.svg);
+    }
+
+    @include mq($from: tablet) {
+      --factor: 2;
+      transform: translate(12rem, 11rem);
+    }
+    @include mq($from: desktop) {
+      transform: translate(4rem, 11rem);
+    }
+    @include mq($from: wrapper_max_width) {
+      transform: translate(-9rem, 9rem);
+    }
+  }
+
+  .cube-3 {
+    --factor: 0;
+    width: calc((308px / 2) * var(--factor));
+    height: calc((372px / 2) * var(--factor));
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: {
+      // color: $dev;
+      image: url(../images/backgrounds/cube-3.svg);
+    }
+
+    @include mq($from: tablet) {
+      --factor: 2;
+      transform: translate(-7rem, 28rem);
+    }
+    @include mq($from: desktop) {
+      transform: translate(-1rem, 28rem);
+    }
+    @include mq($from: wrapper_max_width) {
+      transform: translate(10rem, 27rem);
+    }
+  }
+
+  .stuff-4 {
+    display: none;
+
+    @include mq($from: tablet) {
+      --factor: 1.5;
+      width: calc((238px / 2) * var(--factor));
+      height: calc((148px / 2) * var(--factor));
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 1rem;
+      transform: translate(0, 26rem);
+    }
+    @include mq($from: desktop) {
+      --factor: 2;
+      transform: translate(0, 39rem);
+    }
+  }
+
+  .dialog {
+    @include mq($from: desktop) {
+      max-width: 29rem;
+    }
+    &-wrapper {
+      @include mq($from: tablet) {
+        margin-bottom: 0;
+      }
+      @include mq($from: desktop) {
+        margin-top: 0;
+        position: absolute;
+        bottom: 0;
+        z-index: z(default);
+        transform: translate(15rem, -30rem);
+      }
+      @include mq($from: desktop_large) {
+        transform: translate(20rem, -35rem);
+      }
+    }
+
+    &__title {
+      @include mq($from: desktop) {
+        width: 70%;
+      }
+    }
+  }
+}

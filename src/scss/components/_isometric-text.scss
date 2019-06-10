@@ -1,0 +1,58 @@
+.isometric-text {
+  font-family: sans-serif;
+  font-size: 2.5rem;
+  font-weight: $bold;
+  letter-spacing: 0.5rem;
+  text-align: center;
+
+  transform: rotateX(60deg) rotateY(0deg) rotateZ(-45deg);
+  // transform: skew(63deg,-26.6deg);
+
+  @include mq($from: tablet) {
+    font-size: 6.5rem;
+  }
+  @include mq($from: desktop) {
+    display: none;
+  }
+
+  > span:nth-child(1) {
+    font-size: 55%;
+    color: #f6d602;
+    text-shadow: createShadow(4, #bba403);
+    position: relative;
+
+    &::before {
+      content: "MACHINE";
+      position: absolute;
+      color: #b9d9e5;
+      text-shadow: 0 0 2px #b9d9e5;
+      top: 18px;
+      z-index: -1;
+      left: -28px;
+    }
+
+    @include mq($from: tablet) {
+      text-shadow: createShadow(20, #bba403);
+    }
+  }
+
+  > span:nth-child(2) {
+    color: #78dad7;
+    text-shadow: createShadow(8, #519392);
+    position: relative;
+
+    &::before {
+      content: "LEARNING";
+      position: absolute;
+      color: #b9d9e5;
+      text-shadow: 0 0 2px #b9d9e5;
+      top: 24px;
+      z-index: -1;
+      left: -40px;
+    }
+
+    @include mq($from: tablet) {
+      text-shadow: createShadow(30, #bba403);
+    }
+  }
+}

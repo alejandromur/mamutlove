@@ -1,0 +1,121 @@
+.chapter-3 {
+  position: relative;
+  overflow: hidden;
+  background: {
+    color: transparent;
+    image: url('../images/backgrounds/blue-left.svg');
+    repeat: no-repeat;
+    position: 0 2.5rem;
+    size: 50% auto;
+  }
+
+  @include mq($from: tablet) {
+    background: {
+      color: transparent;
+      image: url('../images/backgrounds/blue-right.svg');
+      repeat: no-repeat;
+      position: 150% 7rem;
+      size: 50% auto;
+    }
+  }
+  @include mq($from: desktop) {
+    background: {
+      position: 120% 7rem;
+      size: 30rem auto;
+    }
+  }
+  @include mq($from: wrapper_max_width) {
+    background: {
+      position: 100% 2rem;
+    }
+  }
+
+  .chapter-container {
+    position: relative;
+
+    .button {
+      @include mq($from: tablet) {
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+      }
+
+      // STATES
+      &.is-active {
+        color: var(--button-active-text-color);
+        border-color: var(--button-active-border-color);
+        background-color: var(--button-active-background-color);
+      }
+    }
+
+    .rel {
+      &:nth-of-type(1) {
+        @include mq($from: tablet) {
+          transform: translate(-2.5rem, 0);
+        }
+      }
+
+      &:nth-of-type(2) {
+        @include mq($from: tablet) {
+          transform: translate(-1.5rem, 0);
+        }
+      }
+    }
+  }
+
+  .chapter-content {
+    margin-top: 0;
+    overflow: hidden;
+  }
+
+  .chapter__image-icon {
+    margin: 2rem auto 3rem;
+
+    @include mq($from: tablet) {
+      display: none;
+    }
+  }
+
+  .chapter__svg {
+    display: none;
+
+    @include mq($from: tablet) {
+      display: block;
+      width: var(--image-max-width);
+      position: relative;
+      left: 50%;
+      transform: translate(-50%);
+    }
+  }
+
+  .chapter__source {
+    max-width: var(--wrapper-max-width);
+    margin: 0 auto 2rem;
+    text-align: left;
+
+    @include mq($from: tablet) {
+      margin-bottom: 0;
+    }
+  }
+
+  .flex-wrapper {
+    @include mq($from: tablet) {
+      display: flex;
+      justify-content: center;
+      width: 38.75rem;
+      margin-left: auto;
+      margin-right: auto;
+      position: relative;
+      z-index: z(default);
+      transform: translate(0, 2rem);
+    }
+  }
+
+  .modal {
+    top: 0;
+    transform: translate(-50%, 5rem);
+
+    &.is-visible {
+      transform: translate(-50%, 4rem);
+    }
+  }
+}

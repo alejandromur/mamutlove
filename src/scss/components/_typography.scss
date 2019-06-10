@@ -1,0 +1,43 @@
+:root {
+  --font-size-xl: 2.25rem;
+  --font-size-l: 2rem;
+  --font-size-m: 1.5rem;
+  --font-size-xs: 0.75rem;
+}
+
+.demo1 {
+  font-size: var(--font-size-xl);
+  font-weight: $bold;
+}
+
+.demo2 {
+  font-size: var(--font-size-m);
+  font-weight: $bold;
+}
+
+.demo3 {
+  font-size: var(--font-size-l);
+  font-weight: $regular;
+}
+
+.demo4 {
+  font-size: var(--font-size-m);
+  font-weight: $regular;
+  color: var(--shadow-color-darkest);
+  text-align: center;
+}
+
+.demo5 {
+  font-size: var(--font-size-m);
+  font-weight: $regular;
+}
+
+.demo6 {
+  font-size: var(--font-size-xs);
+  font-weight: $regular;
+  color: var(--shadow-color-darkest);
+
+  > strong {
+    font-weight: $bold;
+  }
+}

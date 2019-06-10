@@ -1,0 +1,93 @@
+body {
+  scroll-behavior: smooth;
+
+  &.ie-pattern-1 {
+    height: 100vh;
+    overflow: hidden;
+    // background: {
+    //   color: #d9eaf1;
+    //   image: url(../images/main-cover.svg), url(../images/isometric-grid.svg);
+    //   repeat: no-repeat, repeat;
+    //   position: 50% 8rem, 50% 50%;
+    //   size: 100%, 64px 72px;
+    // }
+    background: #d9eaf1 url(../images/isometric-grid.svg) repeat center / auto;
+    // background: #d9eaf1 url(../images/main-cover.svg) no-repeat center / 140%;
+
+    // @include mq($from: desktop) {
+    //   background: #d9eaf1 url(../images/main-cover.svg) no-repeat center / 130%;
+    // }
+    // @include mq($from: desktop_large) {
+    //   background-size: cover;
+    // }
+    @include mq($from: tablet) {
+      position: relative;
+
+      &::after {
+        content: '';
+        display: block;
+        width: 719px;
+        height: 307px;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        background: {
+          image: url('../images/backgrounds/home-footer.svg');
+          repeat: no-repeat;
+          position: 0 0;
+        }
+      }
+    }
+  }
+
+  &.ie-pattern-2 {
+    @include mq($from: desktop) {
+      fill: #e6eff3;
+      // background: var(--light-blue);
+      background: var(--pattern-background-color)
+        url(../images/backgrounds/bg-pattern.png) repeat;
+    }
+  }
+}
+
+.site-wrapper {
+  flex: 1 1 0;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0.25rem 0 0.15rem 0.25rem rgba(0, 0, 0, 0.25),
+    -0.25rem 0 0.15rem 0.25rem rgba(0, 0, 0, 0.25);
+  background-color: var(--white-color);
+  counter-reset: chapter-counter;
+
+  @include mq($from: wrapper_max_width) {
+    width: var(--max-width);
+  }
+}
+
+.site-container {
+  background: {
+    color: transparent;
+    image: url('../images/main-background.svg');
+    repeat: repeat-y;
+    position: center 35rem;
+    size: 100% auto;
+  }
+
+  &::before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 30rem;
+    background: var(--white-color);
+    position: absolute;
+  }
+
+  @include mq($from: wrapper_max_width) {
+    background-size: var(--max-width) auto;
+
+    &::before {
+      width: var(--max-width);
+    }
+  }
+}
