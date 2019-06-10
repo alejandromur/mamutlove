@@ -1,0 +1,4 @@
+baseURL = "https://www.mamutlove.com/"
+languageCode = "es-es"
+title = "Mamutlove"
+# theme = "ga-hugo-theme"
