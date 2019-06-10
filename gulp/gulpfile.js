@@ -143,7 +143,7 @@ gulp.task('clean', function () {
 
 gulp.task('watch', function () {
   // gulp.watch(config.src + 'js/**/*.js', ['scripts']);
-  gulp.watch(config.src + 'css/**/*.{css,scss}', ['sass']);
+  gulp.watch(config.src + 'scss/**/*.scss', ['sass']);
   gulp.watch(config.src + 'images/**/*', ['images']);
   gulp.watch(config.src + '**/*', ['copy:files']);
 });

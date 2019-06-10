@@ -13,18 +13,4 @@
     width: var(--image-max-width);
     transform: translateX(var(--offset-image));
   }
-  // @include mq($from: desktop) {
-  // --offset-image: calc(
-  //   (calc(var(--max-width) - var(--image-max-width)) / 2) * -1
-  // );
-  // width: var(--image-max-width);
-  // transform: translate3d(
-  //   calc(((var(--image-max-width) - var(--wrapper-max-width)) / 2) * -1),
-  //   0,
-  //   0
-  // );
-
-  // width: var(--max-width);
-  // transform: translateX(var(--offset-image));
-  // }
 }

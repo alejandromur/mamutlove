@@ -1,4 +1,4 @@
-baseURL = "https://www.mamutlove.com/"
+baseURL = "http://localhost:1313/"
 languageCode = "es-es"
 title = "Mamutlove"
 # theme = "ga-hugo-theme"
