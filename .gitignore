@@ -1,5 +1,4 @@
 .vscode/
 static/
 public/
-dir1/
-dir3/
+gulp/node_modules/
