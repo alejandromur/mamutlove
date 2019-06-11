@@ -2,3 +2,17 @@ baseURL = "http://localhost:1313/"
 languageCode = "es-es"
 title = "Mamutlove"
 # theme = "ga-hugo-theme"
+
+[menu]
+    [[menu.nav]]
+        identifier = "blog"
+        name = "blog"
+        url = "/blog/"
+    [[menu.nav]]
+        identifier = "mamut"
+        name = "mamut"
+        url = "/mamut/"
+    [[menu.nav]]
+        identifier = "portfolio"
+        name = "portfolio"
+        url = "/portfolio/"

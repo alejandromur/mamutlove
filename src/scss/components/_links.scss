@@ -3,8 +3,17 @@
     font-size: 0.875rem;
     font-weight: $bold;
     color: var(--secondary-color);
+    text-decoration-style: wavy;
+    text-decoration-skip: ink;
+    text-decoration-color: var(--primary-color);
 
     @include mq($from: tablet) {
         font-size: 1rem;
+    }
+
+    &:hover,
+    &:focus {
+        color: var(--secondary-dark-color);
+        text-decoration-color: var(--primary-dark-color);
     }
 }
