@@ -145,7 +145,7 @@ gulp.task('watch', function () {
   // gulp.watch(config.src + 'js/**/*.js', ['scripts']);
   gulp.watch(config.src + 'scss/**/*.scss', ['sass']);
   gulp.watch(config.src + 'images/**/*', ['images']);
-  gulp.watch(config.src + '**/*', ['copy:files']);
+  // gulp.watch(config.src + '**/*', ['copy:files']);
 });
 
 gulp.task('dev', function () {

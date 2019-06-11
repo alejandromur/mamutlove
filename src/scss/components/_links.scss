@@ -1,0 +1,10 @@
+.link {
+    display: inline-block;
+    font-size: 0.875rem;
+    font-weight: $bold;
+    color: var(--secondary-color);
+
+    @include mq($from: tablet) {
+        font-size: 1rem;
+    }
+}
