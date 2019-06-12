@@ -1,7 +1,9 @@
 {{ define "main" }}
-<main class="page-main">
-
-    <h1>página para portfolio</h1>
-    {{ .Content }}
+<main class="main">
+    <ul class="work">
+        {{ range .Site.Params.project }}
+        <li><a class="work__link" href="{{ .url }}" title="{{ .title }}">{{ .name }}</a></li>
+        {{ end }}
+    </ul>
 </main>
 {{ end }}

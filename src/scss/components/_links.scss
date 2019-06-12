@@ -2,10 +2,10 @@
     display: inline-block;
     font-size: 0.875rem;
     font-weight: $bold;
-    color: var(--secondary-color);
+    color: var(--secondary);
     text-decoration-style: wavy;
     text-decoration-skip: ink;
-    text-decoration-color: var(--primary-color);
+    text-decoration: var(--primary);
 
     @include mq($from: tablet) {
         font-size: 1rem;
@@ -13,7 +13,7 @@
 
     &:hover,
     &:focus {
-        color: var(--secondary-dark-color);
-        text-decoration-color: var(--primary-dark-color);
+        color: var(--secondary-dark);
+        text-decoration: var(--primary-dark);
     }
 }

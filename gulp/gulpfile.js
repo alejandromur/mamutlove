@@ -7,6 +7,7 @@ var clean = require('gulp-clean');
 var postcss = require('gulp-postcss');
 var cssvariables = require('postcss-css-variables');
 var autoprefixer = require('autoprefixer');
+var tailwind = require('tailwindcss');
 var mqpacker = require('css-mqpacker');
 var sortCSSmq = require('sort-css-media-queries');
 var cssnano = require('cssnano');
@@ -31,6 +32,7 @@ gulp.task('loadConfig', function (callback) {
 
 gulp.task('sass', function () {
   var postCssOpts = [
+    tailwind(),
     autoprefixer({
       browsers: [
         'last 2 versions',

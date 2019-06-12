@@ -24,7 +24,7 @@ body {
   font-family: inherit;
   font-weight: normal;
   font-size: 100%;
-  color: var(--black-color);
+  color: var(--black);
   line-height: 1.4;
   min-height: 100vh;
 }
@@ -68,12 +68,12 @@ h6 {
 }
 
 a {
-  color: var(--primary-color);
+  color: var(--primary);
   transition: color $medium $linear;
 
   &:hover,
   &:focus {
-    color: var(--secondary-color);
+    color: var(--secondary);
   }
 }
 
@@ -82,11 +82,11 @@ button:focus {
 }
 
 ::-moz-selection {
-  color: var(--white-color);
-  background-color: var(--primary-color);
+  color: var(--white);
+  background: var(--primary);
 }
 
 ::selection {
-  color: var(--white-color);
-  background-color: var(--primary-color);
+  color: var(--white);
+  background: var(--primary);
 }

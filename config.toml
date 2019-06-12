@@ -16,3 +16,26 @@ title = "Mamutlove"
         identifier = "portfolio"
         name = "portfolio"
         url = "/portfolio/"
+
+[params]
+    [[params.project]]
+        name = "randomColour"
+        url = "https://github.com/alejandromur/randomColour"
+        title = "randomColour at github"
+    [[params.project]]
+        name = "shyHeader"
+        url = "https://github.com/alejandromur/shyheader"
+        title = "shyHeader at github"
+    [[params.project]]
+        name = "Angular Firebase Collection Crud"
+        url = "https://github.com/alejandromur/angular-firebase-collection-crud"
+        title = "Angular Firebase Collection Crud at github"
+    [[params.project]]
+        name = "CSS Vars"
+        url = "https://github.com/alejandromur/css-vars"
+        title = "CSSVars at github"
+    [[params.project]]
+        name = "mamutlove"
+        url = "https://github.com/alejandromur/mamutlove"
+        title = "mamutlove at github"
+

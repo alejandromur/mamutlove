@@ -285,7 +285,7 @@ $mq-media-type: screen !default;
   $breakpoints: $mq-breakpoints
 ) {
   body:before {
-    background-color: #fcf8e3;
+    background: #fcf8e3;
     border-bottom: 1px solid #fbeed5;
     border-left: 1px solid #fbeed5;
     color: #c09853;

@@ -2,20 +2,20 @@
 // It takes the KEY to build the selector
 $BUTTONS: (
   primary: (
-    textColor: --button-primary-text-color,
-    backgroundColor: --button-primary-background-color,
-    borderColor: --button-primary-border-color,
-    textHoverColor: --button-primary-hover-text-color,
-    backgroundHoverColor: --button-primary-hover-background-color,
-    borderHoverColor: --button-primary-hover-border-color,
+    textColor: --button-primary-text,
+    backgroundColor: --button-primary-background,
+    borderColor: --button-primary-border,
+    textHoverColor: --button-primary-hover-text,
+    backgroundHoverColor: --button-primary-hover-background,
+    borderHoverColor: --button-primary-hover-border,
   ),
   secondary: (
-    textColor: --button-secondary-text-color,
-    backgroundColor: --button-secondary-background-color,
-    borderColor: --button-secondary-border-color,
-    textHoverColor: --button-secondary-hover-text-color,
-    backgroundHoverColor: --button-secondary-hover-background-color,
-    borderHoverColor: --button-secondary-hover-border-color,
+    textColor: --button-secondary-text,
+    backgroundColor: --button-secondary-background,
+    borderColor: --button-secondary-border,
+    textHoverColor: --button-secondary-hover-text,
+    backgroundHoverColor: --button-secondary-hover-background,
+    borderHoverColor: --button-secondary-hover-border,
   ),
 );
 
@@ -36,21 +36,21 @@ $BUTTONS: (
   $borderHoverColor: var($borderHoverColor);
 
   color: $textColor;
-  border-color: $borderColor;
-  background-color: $backgroundColor;
+  border: $borderColor;
+  background: $backgroundColor;
   transition: all $fast $linear;
 
   &:focus,
   &:hover {
     color: $textHoverColor;
-    border-color: $borderHoverColor;
-    background-color: $backgroundHoverColor;
+    border: $borderHoverColor;
+    background: $backgroundHoverColor;
   }
 
   &:active {
-    color: var(--button-active-text-color);
-    border-color: var(--button-active-border-color);
-    background-color: var(--button-active-background-color);
+    color: var(--button-active-text);
+    border: var(--button-active-border);
+    background: var(--button-active-background);
   }
 }
 

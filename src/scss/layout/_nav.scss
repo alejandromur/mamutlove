@@ -32,20 +32,20 @@
   &__link {
     padding: 0.5rem;
     font-weight: $bold;
-    color: var(--secondary-color);
+    color: var(--secondary);
     text-decoration: none;
     transition: color $medium $ease-in;
 
     &:hover,
     &:focus {
-      color: var(--secondary-dark-color);
+      color: var(--secondary-dark);
     }
 
     &.is-active {
       text-decoration-line: underline;
       text-decoration-style: wavy;
       text-decoration-skip: ink;
-      text-decoration-color: var(--primary-color);
+      text-decoration: var(--primary);
     }
   }
 }
