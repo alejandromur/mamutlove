@@ -3,7 +3,7 @@
   padding: 0 1rem;
 }
 
-.work {
+.work__list {
   margin-top: 3rem;
   margin-bottom: 6rem;
   list-style: none;
@@ -12,31 +12,53 @@
     display: grid;
     grid-gap: 1.25rem;
     grid-template-columns: repeat(4, 1fr);
-
-    > li {
-      background: var(--white);
-      grid-column: span 2;
-
-      &:nth-child(3) {
-        grid-column: span 4;
-      }
-    }
   }
   @include mq($from: desktop) {
     width: var(--inner-wrapper);
     margin-left: auto;
     margin-right: auto;
   }
+}
 
-  &__link {
-    display: block;
-    padding: 2.5rem;
-    border: 0.0625rem solid var(--shadow);
-    transition: all $fast $ease-in;
+.work__item {
+  grid-column: span 2;
+  display: flex;
+  flex-direction: column;
+  padding: 2.5rem;
+  color: var(--secondary);
+  border: 0.0625rem solid currentColor;
+  background: var(--white);
+  transition: all $fast $ease-in;
+  
+  &:hover,
+  &:focus {
+    color: var(--primary);
+  }
 
-    &:hover,
-    &:focus {
-      border-color: var(--primary);
-    }
+  &:nth-child(3) {
+    grid-column: span 4;
+  }
+
+  > h2 {
+    margin-bottom: 1rem;
+    font-size: 1.75rem;
+    font-weight: $bold;
+    transition: color $fast $ease-in;
+  }
+
+  &__tags {
+    margin-bottom: 0.5rem;
+    font-size: 0.75rem;
+    font-weight: $medium;
+  }
+
+  > p {
+    flex: 1;
+  }
+
+  > p,
+  span {
+    color: var(--secondary);
   }
 }
+

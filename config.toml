@@ -20,22 +20,32 @@ title = "Mamutlove"
 [params]
     [[params.project]]
         name = "randomColour"
-        url = "https://github.com/alejandromur/randomColour"
-        title = "randomColour at github"
+        demoUrl = "https://www.mamutlove.com/projects/random-colour/"
+        codeUrl = "https://github.com/alejandromur/randomColour"
+        description = "Red? Green? Blue?<br />Tired about always choosing the same colours when building your HTML? Get a random colour!"
+        categories = ["CSS", "JS"]
     [[params.project]]
         name = "shyHeader"
-        url = "https://github.com/alejandromur/shyheader"
-        title = "shyHeader at github"
+        demoUrl = "https://www.mamutlove.com/projects/random-colour/"
+        codeUrl = "https://github.com/alejandromur/shyheader"
+        description = "A simple, light-weight and easy-to-use jQuery Plugin that shows/hides the header of the page when users scroll the page down more than its height."
+        categories = ["jQuery", "Javascript"]
     [[params.project]]
         name = "Angular Firebase Collection Crud"
-        url = "https://github.com/alejandromur/angular-firebase-collection-crud"
-        title = "Angular Firebase Collection Crud at github"
+        demoUrl = "https://www.mamutlove.com/projects/firebase-collection-crud/"
+        codeUrl = "https://github.com/alejandromur/angular-firebase-collection-crud"
+        description = "An easy-to-use CRUD application based in Angular and Firebase"
+        categories = ["Angular", "Firebase", "Javascript"]
     [[params.project]]
         name = "CSS Vars"
-        url = "https://github.com/alejandromur/css-vars"
-        title = "CSSVars at github"
+        demoUrl = "https://www.mamutlove.com/projects/firebase-collection-crud/"
+        codeUrl = "https://github.com/alejandromur/css-vars"
+        description = "Custom properties applied safely even for old browsers"
+        categories = ["SCSS", "CSS"]        
     [[params.project]]
         name = "mamutlove"
-        url = "https://github.com/alejandromur/mamutlove"
-        title = "mamutlove at github"
+        demoUrl = "https://www.mamutlove.com"
+        codeUrl = "https://github.com/alejandromur/mamutlove"
+        description = "Mamutlove website"
+        categories = ["HTML", "CSS", "JS", "HUGO"]    
 
