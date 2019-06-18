@@ -1,3 +1,4 @@
+a,
 .link {
     display: inline-block;
     font-size: 0.875rem;
@@ -17,7 +18,7 @@
         text-decoration-color: var(--primary-dark);
     }
 
-    & + & {
-        margin-left: 1rem;
-    }
+    // & + & {
+    //     margin-left: 1rem;
+    // }
 }

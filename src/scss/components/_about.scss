@@ -1,0 +1,41 @@
+// ---------------------------------------------------
+// ABOUT
+// ---------------------------------------------------
+
+.about {
+  margin-top: 2rem;
+  margin-bottom: 6rem;
+  list-style: none;
+
+  @include mq($from: desktop) {
+    width: var(--inner-wrapper);
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  > h2 {
+    margin: 2rem 0 1rem;
+    font-size: 1.75rem;
+    font-weight: $bold;
+    color: var(--secondary);
+  }
+  
+  > p {
+    > img {
+      margin-bottom: 2.5rem;
+    }
+  }
+
+  > ul {
+    list-style: none;
+    padding-left: 0;
+
+    > li {
+      display: inline-block;
+
+      + li {
+        margin-left: 1rem;
+      }
+    }
+  }
+}

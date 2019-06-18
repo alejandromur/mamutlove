@@ -1,0 +1,69 @@
+// ---------------------------------------------------
+// WORKS
+// ---------------------------------------------------
+
+.work__list {
+  display: grid;
+  grid-gap: 1.25rem;
+  grid-template-columns: 1fr;
+  margin-top: 2rem;
+  margin-bottom: 6rem;
+  list-style: none;
+
+  @include mq($from: tablet) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  @include mq($from: desktop) {
+    width: var(--inner-wrapper);
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.work__item {
+  display: flex;
+  flex-direction: column;
+  padding: 2.5rem;
+  color: var(--secondary);
+  border: 0.0625rem solid var(--shadow);
+  background: var(--white);
+  // transition: all $fast $ease-in;
+  
+  @include mq($from: tablet) {
+    grid-column: span 2;
+
+    &:nth-child(3) {
+      grid-column: span 4;
+    }
+  }
+  
+  &:hover,
+  &:focus {
+    border-color: var(--primary);
+    color: var(--primary);
+  }
+
+  > h2 {
+    margin-bottom: 1rem;
+    font-size: 1.75rem;
+    font-weight: $bold;
+    color: currentColor;
+    // transition: color $fast $ease-in;
+  }
+
+  &__tags {
+    margin-bottom: 0.5rem;
+    font-size: 0.75rem;
+    font-weight: $medium;
+  }
+
+  > p {
+    flex: 1;
+  }
+
+  > p,
+  span {
+    color: var(--secondary);
+  }
+}
+
