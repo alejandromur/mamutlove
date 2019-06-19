@@ -15,7 +15,7 @@ $linear: linear;
 // Timing
 //-----------
 $fast: 150ms;
-$medium: 250ms;
+$regular: 250ms;
 $slow: 350ms;
 $ultraslow: 500ms;
 
@@ -24,7 +24,7 @@ $delay: 50ms;
 // Grid
 //-----------
 :root {
-  --inner-wrapper: 38.75em; // 620px
+  --inner-wrapper: 58.75em; // 940px
   --max-width: 58.75em; // 940px
 }
 

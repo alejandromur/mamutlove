@@ -1,10 +1,7 @@
 .nav {
-
-  @include mq($from: desktop) {
-      max-width: var(--inner-wrapper);
-      margin-left: auto;
-      margin-right: auto;
-  }
+  max-width: var(--inner-wrapper);
+  margin-left: auto;
+  margin-right: auto;
 
   // CHILDS
   &__list {
@@ -14,6 +11,10 @@
     list-style: none;
 
     li {
+
+      + li {
+        margin-left: 1.5rem;
+      }
 
       &:first-child {
         margin-right: auto;
@@ -30,22 +31,20 @@
   }
 
   &__link {
-    padding: 0.5rem;
+    padding-bottom: 0.0625rem;
     font-weight: $bold;
     color: var(--secondary);
     text-decoration: none;
-    transition: color $medium $ease-in;
+    border-bottom: 0.125rem solid transparent;
+    transition: all $regular $ease-in;
 
     &:hover,
     &:focus {
-      color: var(--secondary-dark);
+      color: var(--primary);
     }
 
     &.is-active {
-      text-decoration-line: underline;
-      text-decoration-style: wavy;
-      text-decoration-skip: ink;
-      text-decoration: var(--primary);
+      border-color: var(--primary);
     }
   }
 }

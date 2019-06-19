@@ -8,7 +8,7 @@
   opacity: 0;
   pointer-events: none;
   transform: translate(-50%, -1rem);
-  transition: all $medium $ease-in;
+  transition: all $regular $ease-in;
 
   @include mq($from: tablet) {
     transform: translate(-50%, 1rem);
@@ -29,7 +29,7 @@
   &.is-visible {
     pointer-events: auto;
     opacity: 1;
-    transition: all $medium $ease-in;
+    transition: all $regular $ease-in;
     transform: translate(-50%, -2rem);
 
     @include mq($from: tablet) {

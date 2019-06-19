@@ -11,7 +11,9 @@
             </div>
             <p>{{ .description | safeHTML }}</p>
             <div>
+                {{ if .demoUrl }}
                 <a class="link" href="{{ .demoUrl }}" title="{{ .name }} demo">demo</a>
+                {{ end }}
                 <a class="link" href="{{ .codeUrl }}" title="{{ .name }} at github">github</a>
             </div>
         </li>

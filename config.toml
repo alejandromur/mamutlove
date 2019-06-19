@@ -19,33 +19,62 @@ title = "Mamutlove"
 
 [params]
     [[params.project]]
-        name = "randomColour"
-        demoUrl = "https://www.mamutlove.com/projects/random-colour/"
-        codeUrl = "https://github.com/alejandromur/randomColour"
-        description = "Red? Green? Blue?<br />Tired about always choosing the same colours when building your HTML? Get a random colour!"
-        categories = ["CSS", "JS"]
-    [[params.project]]
-        name = "shyHeader"
-        demoUrl = "https://www.mamutlove.com/projects/random-colour/"
-        codeUrl = "https://github.com/alejandromur/shyheader"
-        description = "A simple, light-weight and easy-to-use jQuery Plugin that shows/hides the header of the page when users scroll the page down more than its height."
-        categories = ["jQuery", "Javascript"]
-    [[params.project]]
         name = "Angular Firebase Collection Crud"
         demoUrl = "https://www.mamutlove.com/projects/firebase-collection-crud/"
         codeUrl = "https://github.com/alejandromur/angular-firebase-collection-crud"
         description = "An easy-to-use CRUD application based in Angular and Firebase"
         categories = ["Angular", "Firebase", "Javascript"]
     [[params.project]]
+        name = "Type This|"
+        demoUrl = "http://www.mamutlove.es/projects/type-this/"
+        codeUrl = "https://github.com/alejandromur/type-this"
+        description = "A simple Vanilla JavaScript plugin that animates any message you want. No jQuery is needed. No pretentions, just for fun"
+        categories = ["JS"]    
+    [[params.project]]
+        name = "Pop-it"
+        demoUrl = "https://www.mamutlove.com/projects/pop-it/"
+        codeUrl = "https://github.com/alejandromur/pop-it"
+        description = "A(nother) simple Vanilla JavaScript plugin that launch a pop up box where place your message. No jQuery is needed. No pretentions, just for fun."
+        categories = ["JS"]    
+    [[params.project]]
+        name = "randomColour"
+        demoUrl = "https://www.mamutlove.com/projects/random-colour/"
+        codeUrl = "https://github.com/alejandromur/randomColour"
+        description = "Red? Green? Blue?<br />Tired about always choosing the same colours when building your HTML? Get a random colour!"
+        categories = ["CSS", "JS"]
+    [[params.project]]
         name = "CSS Vars"
-        demoUrl = "https://www.mamutlove.com/projects/firebase-collection-crud/"
         codeUrl = "https://github.com/alejandromur/css-vars"
         description = "Custom properties applied safely even for old browsers"
         categories = ["SCSS", "CSS"]        
+    [[params.project]]
+        name = "shyHeader"
+        demoUrl = "https://www.mamutlove.com/projects/shyheader/"
+        codeUrl = "https://github.com/alejandromur/shyheader"
+        description = "A simple, light-weight and easy-to-use jQuery Plugin that shows/hides the header of the page when users scroll the page down more than its height."
+        categories = ["jQuery", "Javascript"]
+    [[params.project]]
+        name = "stick-this"
+        demoUrl = "https://www.mamutlove.com/projects/stickthis/"
+        codeUrl = "https://github.com/alejandromur/stickthis"
+        description = "A simple jQuery Plugin to fix whatever element to the top of the browser. No pretentions, just for fun."
+        categories = ["jQuery", "JS", "CSS"]    
+    [[params.project]]
+        name = "tip-off"
+        demoUrl = "http://www.mamutlove.es/projects/tip-off/"
+        codeUrl = "https://github.com/alejandromur/tip-off"
+        description = "A simple modal box writen with #CSS. No #JavaScript is required"
+        categories = ["CSS"]    
+    [[params.project]]
+        name = "greëed"
+        demoUrl = "https://www.mamutlove.com/projects/greeed/"
+        codeUrl = "https://github.com/alejandromur/greeed"
+        description = "A simple and customizable responsive #CSS grid based on the FLOAT technique"
+        categories = ["SCSS", "HTML", "CSS"]    
     [[params.project]]
         name = "mamutlove"
         demoUrl = "https://www.mamutlove.com"
         codeUrl = "https://github.com/alejandromur/mamutlove"
         description = "Mamutlove website"
-        categories = ["HTML", "CSS", "JS", "HUGO"]    
+        categories = ["HUGO", "HTML", "CSS", "JS"]    
 
