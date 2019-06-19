@@ -14,8 +14,8 @@
   }
 
   > h2 {
-    margin: 2rem 0 1rem;
-    font-size: 1.75rem;
+    margin: 3rem 0 1rem;
+    font-size: 2rem;
     font-weight: $bold;
     color: var(--secondary);
   }
@@ -24,6 +24,10 @@
     > img {
       margin-bottom: 2.5rem;
     }
+  }
+
+  a {
+    @include link;
   }
 
   > ul {

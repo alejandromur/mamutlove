@@ -1,8 +1,6 @@
 {{ define "main" }}
-<main class="page-main">
-
-    <h1>range from _default</h1>
-    <ul>
+<main class="main">
+    <ul class="posts__list">
         {{ range .Pages }}
         <li>
             <a href="{{ .Permalink }}">{{ .Title }}</a>

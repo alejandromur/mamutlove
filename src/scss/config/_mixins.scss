@@ -4,6 +4,30 @@
   border: 2px dashed $color;
 }
 
+@mixin link() {
+  display: inline-block;
+  padding-bottom: 0.0625rem;
+  font-size: 0.875rem;
+  font-weight: $bold;
+  color: var(--secondary);
+  text-decoration: none;
+  border-bottom: 0.125rem solid var(--primary);
+  transition: color $fast $ease-in;
+
+  @include mq($from: tablet) {
+      font-size: 1rem;
+  }
+
+  &:hover,
+  &:focus {
+      color: var(--primary);
+  }
+
+  & + & {
+      margin-left: 1.25rem;
+  }
+}
+
 @mixin animate-show(
   $dir: "v",
   $offset: 1rem,
