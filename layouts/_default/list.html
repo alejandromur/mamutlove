@@ -3,7 +3,18 @@
     <ul class="posts__list">
         {{ range .Pages }}
         <li>
+            <time>{{ dateFormat "02/01/2006" .Date }}</time>
             <a href="{{ .Permalink }}">{{ .Title }}</a>
+
+            {{ if .Params.tags }}
+            <ul>
+                {{ range .Params.Tags }}
+                <li>
+                    <a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a>
+                </li>
+                {{ end }}
+            </ul>
+            {{end}}
         </li>
         {{ end }}
     </ul>

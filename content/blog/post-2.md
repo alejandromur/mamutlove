@@ -1,6 +1,7 @@
 ---
 title: "CSS Grid Layout"
 date: 2019-06-04T21:12:13+02:00
+tags: ["CSS", "Grid"]
 draft: false
 ---
 
