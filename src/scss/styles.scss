@@ -31,24 +31,20 @@
 @import 'components/typography';
 @import 'components/buttons';
 @import 'components/spinner';
-@import 'components/card';
-@import 'components/tabs';
-@import 'components/dialog';
 
 @import 'components/about';
 @import 'components/works';
 @import 'components/posts';
+@import 'components/posts-content';
 
 // Pages
 // ------------
-@import 'pages/home';
 
 // Overrides
 // -------------------------
 
 // Browsers hacks
 // -------------------------
-@import 'browser-hacks/ie-11';
 
 // Print
 // -------------------------

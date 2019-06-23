@@ -1,5 +1,8 @@
 {{ define "main" }}
-<main class="main">
-    {{ .Content }}
-</main>
+<article class="post">
+    <section class="post-content">
+        {{ .Content }}
+        <!-- {{ .Content | replaceRE "<p>" "<p class=\"mb4 px3\">" | safeHTML }} -->
+    </section>
+</article>
 {{ end }}

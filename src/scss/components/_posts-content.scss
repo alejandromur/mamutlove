@@ -1,0 +1,107 @@
+// ---------------------------------------------------
+// Post Content
+// ---------------------------------------------------
+
+.post {
+    display: grid;
+    grid-template-columns: 1fr 1fr minmax(auto, var(--post-wrapper)) 1fr 1fr;
+    margin-top: 2rem;
+    margin-bottom: 6rem;
+
+    &-content {
+      grid-column: 3 / 4;
+
+      header {
+        background: var(--shadow-light);
+
+        &::before {
+          content: '';
+          display: block;
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: 100vw;
+          height: 100px;
+          background-color: var(--shadow-light);
+          z-index: -1;
+        }
+      }
+
+      h1 {
+        margin-bottom: 6rem;
+        font-size: 2.25rem;
+        font-weight: $bold;
+        color: currentColor;
+      }
+
+      h2 {
+        margin-bottom: 1rem;
+        font-size: 1.5rem;
+        font-weight: $bold;
+        color: currentColor;
+      }
+
+      p {
+
+      }
+
+      ul {
+          li {
+
+          }
+      }
+
+      a {
+          @include link;
+      }
+    
+    }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    padding: 2.5rem;
+    color: var(--secondary);
+    border: 0.0625rem solid var(--shadow);
+    background: var(--white);
+    // transition: all $fast $ease-in;
+    
+    @include mq($from: tablet) {
+      grid-column: span 2;
+
+      &:nth-child(1) {
+        grid-column: span 4;
+      }
+      &:nth-child(3n+5) {
+        grid-column: span 4;
+        // grid-row: span 2;
+      }
+    }
+    
+    &:hover,
+    &:focus {
+      border-color: var(--primary);
+      color: var(--primary);
+    }
+
+    > h2 {
+
+      // transition: color $fast $ease-in;
+    }
+
+    &__tags {
+      margin: 0.5rem 0;
+      font-size: 0.875rem;
+      font-weight: $regular;
+    }
+
+    > p {
+      flex: 1;
+    }
+
+    > p,
+    span {
+      color: var(--secondary);
+    }
+  }
+}
