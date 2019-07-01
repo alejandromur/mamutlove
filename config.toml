@@ -1,6 +1,7 @@
 baseURL = "http://localhost:1313/"
 languageCode = "es-es"
 title = "Mamutlove"
+sectionPagesMenu = "nav"
 # theme = "ga-hugo-theme"
 
 [menu]
@@ -8,14 +9,17 @@ title = "Mamutlove"
         identifier = "blog"
         name = "blog"
         url = "/blog/"
+        weight = 1
     [[menu.nav]]
         identifier = "mamut"
         name = "mamut"
         url = "/mamut/"
+        weight = 2
     [[menu.nav]]
         identifier = "portfolio"
         name = "portfolio"
         url = "/portfolio/"
+        weight = 3
 
 [params]
     [[params.project]]

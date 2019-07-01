@@ -29,32 +29,10 @@
         {{ range .Site.Menus.nav }}
         {{ $is := $currentPage.IsMenuCurrent "nav" . }}
         {{ $has := $currentPage.HasMenuCurrent "nav" . }}
-        <li><a class="nav__link {{ if or $is $has }}is-active{{ end }}" href="{{ .URL }}">{{ .Name }}</a></li>
+        <li>
+            <a class="nav__link {{ if or $is $has }}is-active{{ end }}" href="{{ .URL }}">{{- .Name -}}</a>
+        </li>
         {{ end }}
     </ul>
 </nav>
-
-<!-- <aside>
-    <ul>
-        {{ $currentPage := . }}
-        {{ range .Site.Menus.nav }}
-        {{ if .HasChildren }}
-        <li class="{{ if $currentPage.HasMenuCurrent "nav" . }}active{{ end }}">
-            <a href="#">
-                {{ .Pre }}
-                <span>{{ .Name }}</span>
-            </a>
-        </li>
-
-        {{ else }}
-        <li class="{{ if $currentPage.HasMenuCurrent "main" . }}active{{ end }}">
-            <a href="{{ .URL }}">
-                {{ .Pre }}
-                <span>{{ .Name }}</span>
-            </a>
-        </li>
-        {{ end }}
-        {{ end }}
-    </ul>
-</aside> -->
 {{end}}

@@ -1,7 +1,8 @@
 ---
 title: "Cuando crees que Grid te va a salvar la vida"
 date: 2019-06-23T09:58:51+02:00
-draft: true
+draft: false
+SectionPagesMenu: "nav"
 ---
 
 {{% post-header %}}
