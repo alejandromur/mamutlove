@@ -38,10 +38,6 @@
       &:nth-child(1) {
         grid-column: span 4;
       }
-      &:nth-child(3n+5) {
-        grid-column: span 4;
-        // grid-row: span 2;
-      }
     }
     
     &:hover,
@@ -56,6 +52,11 @@
       font-weight: $bold;
       color: currentColor;
       // transition: color $fast $ease-in;
+
+      > a {
+        color: currentColor;
+        text-decoration: none;
+      }
     }
 
     &__tags {
@@ -71,6 +72,33 @@
     > p,
     span {
       color: var(--secondary);
+    }
+  }
+
+  &__tags {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0;
+    list-style-type: none;
+
+    li {
+      margin-right: 1rem;
+    }
+
+    a {
+      color: currentColor;
+
+      &::before {
+        content: '< ';
+      }
+      &::after {
+        content: ' >';
+      }
+
+      &:hover,
+      &:focus {
+        color: var(--secondary-dark);
+      }
     }
   }
 }

@@ -1,7 +1,7 @@
 ---
-title: "Cuando crees que Grid te va a salvar la vida"
+title: "Tailwindcss en un proyecto real"
 date: 2019-06-23T09:58:51+02:00
-tags: ["SCSS", "CSS", "Grid"]
+tags: ["SCSS", "CSS", "Tailwindcss", "BEM"]
 draft: false
 ---
 

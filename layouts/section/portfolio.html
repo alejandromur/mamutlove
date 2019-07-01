@@ -1,10 +1,10 @@
 {{ define "main" }}
 <main class="main">
-    <ul class="work__list">
+    <ul class="works__list">
         {{ range .Site.Params.project }}
-        <li class="work__item">
+        <li class="works__item">
             <h2>{{ .name }}</h2>
-            <div class="work__item__tags">
+            <div class="works__item__tags">
                 {{ range .categories }}
                 <span>{{ . }}</span>
                 {{ end }}

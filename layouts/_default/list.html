@@ -2,12 +2,12 @@
 <main class="main">
     <ul class="posts__list">
         {{ range .Pages }}
-        <li>
+        <li class="posts__item">
             <time>{{ dateFormat "02/01/2006" .Date }}</time>
-            <a href="{{ .Permalink }}">{{ .Title }}</a>
+            <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
 
             {{ if .Params.tags }}
-            <ul>
+            <ul class="posts__tags">
                 {{ range .Params.Tags }}
                 <li>
                     <a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a>
