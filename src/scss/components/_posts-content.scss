@@ -2,106 +2,84 @@
 // Post Content
 // ---------------------------------------------------
 
+$headerOffset: 11.25rem;
+$headerMarginBottom: 2.25rem;
+
 .post {
-    display: grid;
-    grid-template-columns: 1fr 1fr minmax(auto, var(--post-wrapper)) 1fr 1fr;
-    margin-top: 2rem;
-    margin-bottom: 6rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr minmax(auto, var(--post-wrapper)) 1fr 1fr;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-top: 2rem;
+  margin-bottom: 6rem;
 
-    &-content {
-      grid-column: 3 / 4;
+  &-content {
+    grid-column: 3 / 4;
 
-      header {
-        background: var(--shadow-light);
+    &__header {
+      position: relative;
+      background: var(--shadow-light);
 
-        &::before {
-          content: '';
-          display: block;
-          position: absolute;
-          left: 0;
-          top: 0;
-          width: 100vw;
-          height: 100px;
-          background-color: var(--shadow-light);
-          z-index: -1;
-        }
-      }
-
-      h1 {
-        margin-bottom: 6rem;
-        font-size: 2.25rem;
-        font-weight: $bold;
-        color: currentColor;
-      }
-
-      h2 {
-        margin-bottom: 1rem;
-        font-size: 1.5rem;
-        font-weight: $bold;
-        color: currentColor;
-      }
-
-      p {
-
-      }
-
-      ul {
-          li {
-
-          }
-      }
-
-      a {
-          @include link;
-      }
-    
-    }
-
-  &__item {
-    display: flex;
-    flex-direction: column;
-    padding: 2.5rem;
-    color: var(--secondary);
-    border: 0.0625rem solid var(--shadow);
-    background: var(--white);
-    // transition: all $fast $ease-in;
-    
-    @include mq($from: tablet) {
-      grid-column: span 2;
-
-      &:nth-child(1) {
-        grid-column: span 4;
-      }
-      &:nth-child(3n+5) {
-        grid-column: span 4;
-        // grid-row: span 2;
+      &::before {
+        content: '';
+        display: block;
+        position: absolute;
+        left: 50%;
+        top: 0;
+        width: 100vw;
+        height: calc(100% + #{$headerOffset} + #{$headerMarginBottom});
+        background-color: var(--shadow-light);
+        z-index: -1;
+        transform: translate(-50%, ($headerOffset * -1));
       }
     }
-    
-    &:hover,
-    &:focus {
-      border-color: var(--primary);
-      color: var(--primary);
+
+    time {
+      display: inline-block;
+      margin-bottom: 1.5rem;
     }
 
-    > h2 {
-
-      // transition: color $fast $ease-in;
+    h1 {
+      margin-bottom: calc(4rem + 3vw);
+      font-size: calc(1rem + 3vw);
+      font-weight: $bold;
+      color: currentColor;
+      
+      @include mq($from: tablet) {
+        font-size: calc(2rem + 1vw);
+        margin-bottom: calc(6rem + 3vw);
+      }
     }
 
-    &__tags {
-      margin: 0.5rem 0;
-      font-size: 0.875rem;
-      font-weight: $regular;
+    h2 {
+      margin-top: calc(2.5rem + 1.5vw);
+      margin-bottom: calc(1rem + 1.5vw);
+      font-size: calc(1rem + 1.5vw);
+      font-weight: $bold;
+      color: currentColor;
+      
+      @include mq($from: tablet) {
+        margin-top: calc(2.75rem + 1.5vw);
+        margin-bottom: calc(1.25rem + 1.5vw);
+        font-size: calc(1.25rem + 1vw);
+      }      
     }
 
-    > p {
-      flex: 1;
+    p {
+      font-size: calc(1rem + 0.125vw);
+      line-height: 1.65;
     }
 
-    > p,
-    span {
-      color: var(--secondary);
+    ul {
+      li {
+        font-size: calc(1rem + 0.125vw);
+        line-height: 1.65;
+      }
     }
+
+    a {
+        @include link;
+    }
+  
   }
 }

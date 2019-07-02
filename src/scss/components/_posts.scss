@@ -43,6 +43,7 @@
     &:hover,
     &:focus {
       border-color: var(--primary);
+      box-shadow: 0 0 0 0.25rem var(--primary);
       color: var(--primary);
     }
 

@@ -1,6 +1,10 @@
 {{ define "main" }}
 <article class="post">
     <section class="post-content">
+        <header class="post-content__header">
+            <time>{{ dateFormat "02/01/2006" .Date }}</time>
+            <h1>{{ .Title }}</h1>
+        </header>
         {{ .Content }}
         <!-- {{ .Content | replaceRE "<p>" "<p class=\"mb4 px3\">" | safeHTML }} -->
     </section>

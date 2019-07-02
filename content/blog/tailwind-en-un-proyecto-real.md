@@ -1,13 +1,9 @@
 ---
-title: "Tailwindcss en un proyecto real"
+title: "Tailwind en un proyecto real"
 date: 2019-06-23T09:58:51+02:00
-tags: ["SCSS", "CSS", "Tailwindcss", "BEM"]
+tags: ["SCSS", "CSS", "Tailwind", "BEM"]
 draft: false
 ---
-
-{{% post-header %}}
-# Cuando crees que Grid te va a salvar la vida
-{{%/ post-header %}}
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pretium pretium tempor. Ut eget imperdiet neque. In volutpat ante semper diam molestie, et aliquam erat laoreet. Sed sit amet arcu aliquet, molestie justo at, auctor nunc. Phasellus ligula ipsum, volutpat eget semper id, viverra eget nibh. Suspendisse luctus mattis cursus. Nam consectetur ante at nisl hendrerit gravida. Donec vehicula rhoncus mattis. 
 
