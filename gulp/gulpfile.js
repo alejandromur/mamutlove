@@ -144,14 +144,14 @@ gulp.task('clean', function () {
 });
 
 gulp.task('watch', function () {
-  // gulp.watch(config.src + 'js/**/*.js', ['scripts']);
+  gulp.watch(config.src + 'js/**/*.js', ['concat-js-min']);
   gulp.watch(config.src + 'scss/**/*.scss', ['sass']);
   gulp.watch(config.src + 'images/**/*', ['images']);
   // gulp.watch(config.src + '**/*', ['copy:files']);
 });
 
 gulp.task('dev', function () {
-  runSequence('clean', 'sass', 'copy:files', 'watch');
+  runSequence('clean', 'sass', 'concat-js-min', 'copy:files', 'watch');
 });
 
 gulp.task('prod', function () {

@@ -12,31 +12,27 @@ $namespace: 'mamutlove';
 // Brand Colours
 //-----------
 :root {
-  --white: #ffffff;
-  --black: #000000;
+  --neutral: transparent;
+  --neutral-100: #ffffff;
+  --neutral-200: #f7f7f7;
+  --neutral-300: #D8D8D8;
+  --neutral-500: #000000;
 
   --primary: #FF0066;
   --primary-dark: #e4007c;
   --secondary: #474646;
   --secondary-dark: #454d66;
-  --shadow: #D8D8D8;
-  --shadow-light: #f7f7f7;
+}
 
-  --button-primary-text: var(--secondary-text);
-  --button-primary-background: #0094f8;
-  --button-primary-border: #027cce;
-  --button-primary-hover-text: var(--white);
-  --button-primary-hover-background: #35aeff;
-  --button-primary-hover-border: #0097fc;
+.theme-dark {
+  --neutral: #454d66;
+  --neutral-100: #000000;
+  --neutral-200: #D8D8D8;
+  --neutral-300: #f7f7f7;
+  --neutral-500: #ffffff;
 
-  --button-secondary-text: var(--secondary-text);
-  --button-secondary-background: #0bb970;
-  --button-secondary-border: #099359;
-  --button-secondary-hover-text: var(--white);
-  --button-secondary-hover-background: #00d47b;
-  --button-secondary-hover-border: #04be70;
-
-  --button-active-text: #1c3b50;
-  --button-active-background: #f6e000;
-  --button-active-border: #fab802;
+  --primary: #474646;
+  --primary-dark: #454d66;
+  --secondary: #FF0066;
+  --secondary-dark: #e4007c;
 }

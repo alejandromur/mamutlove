@@ -18,7 +18,7 @@ $headerMarginBottom: 2.25rem;
 
     &__header {
       position: relative;
-      background: var(--shadow-light);
+      background: var(--neutral-200);
 
       &::before {
         content: '';
@@ -28,7 +28,7 @@ $headerMarginBottom: 2.25rem;
         top: 0;
         width: 100vw;
         height: calc(100% + #{$headerOffset} + #{$headerMarginBottom});
-        background-color: var(--shadow-light);
+        background-color: var(--neutral-200);
         z-index: -1;
         transform: translate(-50%, ($headerOffset * -1));
       }

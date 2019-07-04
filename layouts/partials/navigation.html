@@ -33,6 +33,13 @@
             <a class="nav__link {{ if or $is $has }}is-active{{ end }}" href="{{ .URL }}">{{- .Name -}}</a>
         </li>
         {{ end }}
+        <li>
+            <button class="nav__button js-toggle-theme">
+                <svg width="24" height="24">
+                    <use xlink:href="/images/icons/sprite.svg#settings"></use>
+                </svg>
+            </button>
+        </li>
     </ul>
 </nav>
 {{end}}

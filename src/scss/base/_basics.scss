@@ -25,9 +25,9 @@ body {
   font-family: inherit;
   font-weight: normal;
   font-size: 100%;
-  color: var(--black);
+  color: var(--neutral-500);
   line-height: 1.4;
-  background-color: var(--white);
+  background-color: var(--neutral);
 }
 
 abbr[title] {
@@ -84,11 +84,11 @@ button:focus {
 }
 
 ::-moz-selection {
-  color: var(--white);
+  color: var(--neutral-100);
   background: var(--primary);
 }
 
 ::selection {
-  color: var(--white);
+  color: var(--neutral-100);
   background: var(--primary);
 }
