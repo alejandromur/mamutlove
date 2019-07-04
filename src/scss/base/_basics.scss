@@ -21,12 +21,13 @@ html {
 body {
   display: flex;
   flex-direction: column;
+  min-height: 100vh;
   font-family: inherit;
   font-weight: normal;
   font-size: 100%;
   color: var(--black);
   line-height: 1.4;
-  min-height: 100vh;
+  background-color: var(--white);
 }
 
 abbr[title] {
