@@ -1,0 +1,30 @@
+[class^="blockquote"] {
+    padding: 1.5rem 1.5rem 1.5rem 2.5rem;
+    margin: 3rem 0;
+    font-size: 0.875rem;
+    color: var(--secondary);
+
+
+    > p {
+        margin: 0;
+
+        > em {
+            display: block;
+            opacity: 0.37;
+        }
+    }
+}
+
+.blockquote-default {
+    border-left: 0.5rem solid var(--primary);
+}
+
+.blockquote-third {
+    border-left: 0.5rem solid var(--secondary);
+    background-color: var(--neutral-200);
+}
+
+.blockquote-self {
+    border: 0.0625rem solid var(--neutral-300);
+}
+

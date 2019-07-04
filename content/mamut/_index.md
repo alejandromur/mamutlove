@@ -17,7 +17,7 @@ Diseñamos y construimos interfaces de usuario **pensando en el usuario**.
 
 Bla, bla, bla, **HTML, CSS, JS, Angular** consectetur adipiscing elit. Ut pretium pretium tempor, honsectetur adipiscing elit. Ut pretium pretium tempor onsectetur onsectetur onsectetur.
 
-Además ofrecemos un [programa de mentorización personalizada](http://example.com/ "Title") y [cursos de formación para empresas](http://example.com/ "Title").
+Además ofrecemos [mentorización](http://example.com/ "Title") y [formación a particulares y empresas](http://example.com/ "Title").
 
 ## Estamos
 Puedes ponerte en contacto con nosotros a través de [twitter](https://twitter.com/Mamutlove "Síguenos en twitter") o por [email](mailto:hola@mamutlove.es "Escríbenos un email")

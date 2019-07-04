@@ -5,13 +5,9 @@ tags: ["SCSS", "CSS", "Grid"]
 draft: false
 ---
 
-{{% post-header %}}
-# Cuando crees que Grid te va a salvar la vida
-{{%/ post-header %}}
-
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pretium pretium tempor. Ut eget imperdiet neque. In volutpat ante semper diam molestie, et aliquam erat laoreet. Sed sit amet arcu aliquet, molestie justo at, auctor nunc. Phasellus ligula ipsum, volutpat eget semper id, viverra eget nibh. Suspendisse luctus mattis cursus. Nam consectetur ante at nisl hendrerit gravida. Donec vehicula rhoncus mattis. 
 
-In this example, `<section></section>` should be wrapped as **code**.
+In this example, `%section%%/section%` should be wrapped as **code**.
 
 
 ## Titular de sección y/o apartado
@@ -38,7 +34,23 @@ Keytar McSweeney's Williamsburg, readymade leggings try-hard 90's street art let
 
 Keytar McSweeney's Williamsburg, readymade leggings try-hard 90's street art letterpress hoodie occupy Wes Anderson Banksy. Asymmetrical viral letterpress, McSweeney's seitan 3 wolf moon drinking vine.
 
-> **autopromo** Estamos haciendo auto promoción por lo tanto si esto y lo otro y lo de más allá, o si estás interesado en nuestros servicios de consultoría y formación para empresas ponte en [contacto](mailto:hola@mamutlove.es "Mándanos un email a hola@mamutlove.es")
+
+{{% blockquote blockquote-default %}}
+En nuestra opinión bla, bla, bla
+{{% /blockquote %}}
+
+Hay que tener en cuenta que esto y lo otro y además que esto es un destacado, tip o cosa así que quiero destacar ip o cosa así que p o cosa así que quiero destacar ip o cosa
+
+{{% blockquote blockquote-third %}}
+*w3c*
+Ojo porque esto claro, tiene miga, y no sólo eso, si no que se va a dos líneas como si no le importase lo que fuesen a decir de él
+{{% /blockquote %}}
+
+Hay que tener en cuenta que esto y lo otro y además que esto es un destacado, tip o cosa así que quiero destacar ip o cosa así que p o cosa así que quiero destacar ip o cosaHay que tener en cuenta que esto y lo otro y además que esto es un destacado, tip o cosa así que quiero destacar ip o cosa así que p o cosa así que quiero destacar ip o cosa
+
+{{% blockquote blockquote-self %}}
+Estamos preparando esto y lo otro y lo de más allá, así que si estás interesado en nuestros servicios de consultoría [escríbenos](mailto:hola@mamutlove.es "Mándanos un email a hola@mamutlove.es")
+{{% /blockquote %}}
 
 ## Si te ha parecido interesante
 
