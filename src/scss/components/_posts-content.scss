@@ -29,10 +29,16 @@ $headerMarginBottom: 2.25rem;
         width: 100vw;
         height: calc(100% + #{$headerOffset} + #{$headerMarginBottom});
         background-color: var(--neutral-200);
-        z-index: -1;
+        z-index: 0;
         transform: translate(-50%, ($headerOffset * -1));
       }
+      
+      > * {
+        position: relative;
+        z-index: z(default);
+      }
     }
+
 
     time {
       display: inline-block;

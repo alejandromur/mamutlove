@@ -2,3 +2,4 @@
 static/
 public/
 gulp/node_modules/
+*.txt

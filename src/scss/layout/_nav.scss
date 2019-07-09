@@ -48,6 +48,13 @@
     }
   }
 
+  &__logo {
+
+    .theme-dark & {
+      color: var(--secondary-dark);
+    }
+  }
+
   &__button {
     padding: 0;
     border: 0;

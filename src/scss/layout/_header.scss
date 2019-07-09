@@ -1,4 +1,6 @@
 .header {
+  position: relative;
+  z-index: z(default);
   padding: 1.5rem 1rem;
   border-top: 0.25rem solid var(--primary);
   

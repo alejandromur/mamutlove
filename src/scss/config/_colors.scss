@@ -16,23 +16,19 @@ $namespace: 'mamutlove';
   --neutral-100: #ffffff;
   --neutral-200: #f7f7f7;
   --neutral-300: #D8D8D8;
-  --neutral-500: #000000;
 
   --primary: #FF0066;
-  --primary-dark: #e4007c;
   --secondary: #474646;
   --secondary-dark: #454d66;
 }
 
 .theme-dark {
-  --neutral: #454d66;
-  --neutral-100: #000000;
-  --neutral-200: #D8D8D8;
-  --neutral-300: #f7f7f7;
-  --neutral-500: #ffffff;
+  --neutral: #171115;
+  --neutral-100: #1e171b;
+  --neutral-200: #1e171b;
+  --neutral-300: #1e171b;
 
-  --primary: #474646;
-  --primary-dark: #454d66;
-  --secondary: #FF0066;
-  --secondary-dark: #e4007c;
+  --primary: #f06;
+  --secondary: rgb(226, 214, 218);
+  --secondary-dark: rgb(255, 244, 248);
 }
