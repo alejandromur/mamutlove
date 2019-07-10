@@ -138,6 +138,17 @@ gulp.task('copy:files', function () {
     .pipe(gulp.dest(config.dest));
 });
 
+gulp.task('images', function () {
+  return gulp
+    .src(
+      [
+        config.src + 'images/**/*',
+      ],
+      { base: config.src, nodir: true, dot: true }
+    )
+    .pipe(gulp.dest(config.dest));
+});
+
 // Clean
 gulp.task('clean', function () {
   return del([config.dest], { force: true });
