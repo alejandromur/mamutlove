@@ -30,7 +30,6 @@
     color: var(--secondary);
     border: 0.0625rem solid var(--neutral-300);
     background: var(--neutral-100);
-    // transition: all $fast $ease-in;
     
     @include mq($from: tablet) {
       grid-column: span 2;
@@ -40,7 +39,6 @@
       }
       &:nth-child(3n+5) {
         grid-column: span 4;
-        // grid-row: span 2;
       }
     }
     
@@ -56,7 +54,6 @@
       font-size: 1.75rem;
       font-weight: $bold;
       color: currentColor;
-      // transition: color $fast $ease-in;
     }
 
     &__tags {

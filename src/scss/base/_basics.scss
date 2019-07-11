@@ -79,10 +79,6 @@ a {
   }
 }
 
-button:focus {
-  outline: none;
-}
-
 ::-moz-selection {
   color: var(--neutral-100);
   background: var(--primary);
@@ -92,3 +88,4 @@ button:focus {
   color: var(--neutral-100);
   background: var(--primary);
 }
+

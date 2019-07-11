@@ -1,3 +1,15 @@
+.main-content-anchor {
+  padding: 1rem;
+  background-color: var(--neutral-200);
+  position: absolute;
+  z-index: z(default);
+  transform: translateY(-100%);
+
+  &:focus {
+    transform: none;
+  }
+}
+
 .wrapper {
   width: 100%;
   max-width: var(--wrapper-max-width);

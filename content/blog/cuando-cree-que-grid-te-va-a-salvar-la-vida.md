@@ -10,7 +10,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pretium pretium temp
 In this example, `%section%%/section%` should be wrapped as **code**.
 
 
-## Titular de sección y/o apartado
+### Titular de sección y/o apartado
 
 Keytar McSweeney's Williamsburg, readymade leggings try-hard 90's street art letterpress hoodie occupy Wes Anderson Banksy. Asymmetrical viral letterpress, McSweeney's seitan 3 wolf moon drinking vinegar sartorial pour-over messenger bag photo booth umami next level craft beer. **Tote bag 8-bit flannel** dreamcatcher photo booth. Tofu photo booth American Apparel, cliche brunch swag freegan lomo retro cray Vice gastropub post-ironic +1 pickled. Marfa Tonx next level, Banksy lo-fi vegan pop-up chia small batch DIY seitan asymmetrical viral. Disrupt salvia bespoke craft beer master cleanse. Butcher cornhole gentrify pop-up, raw denim viral literally.
 
@@ -30,7 +30,7 @@ Hay que tener en cuenta que esto y lo otro y además que esto es un destacado, t
 
 Keytar McSweeney's Williamsburg, readymade leggings try-hard 90's street art letterpress hoodie occupy Wes Anderson Banksy. Asymmetrical viral letterpress, McSweeney's seitan 3 wolf moon drinking vine.
 
-## Conclusión
+### Conclusión
 
 Keytar McSweeney's Williamsburg, readymade leggings try-hard 90's street art letterpress hoodie occupy Wes Anderson Banksy. Asymmetrical viral letterpress, McSweeney's seitan 3 wolf moon drinking vine.
 
@@ -52,6 +52,6 @@ Hay que tener en cuenta que esto y lo otro y además que esto es un destacado, t
 Estamos preparando esto y lo otro y lo de más allá, así que si estás interesado en nuestros servicios de consultoría [escríbenos](mailto:hola@mamutlove.es "Mándanos un email a hola@mamutlove.es")
 {{% /blockquote %}}
 
-## Si te ha parecido interesante
+### Si te ha parecido interesante
 
 Keytar **McSweeney's Williamsburg**, readymade leggings try-hard 90's street art letterpress hoodie occupy Wes Anderson Banksy. Asymmetrical viral letterpress, McSweeney's seitan 3 wolf moon drinking vine.

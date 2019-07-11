@@ -1,7 +1,18 @@
 // Dev
 // -------
 @mixin dev($color: $dev) {
-  border: 2px dashed $color;
+  padding: 0.5rem 1rem;
+  margin: 1rem 0;
+  font-size: 1rem;
+  color: var(--neutral-100);
+  text-align: center;
+  background: $dev;
+  border-bottom: 3px solid darken($dev, 10%);
+  border-radius: 0.25rem;
+
+  &:hover {
+    background: lighten($dev, 5%);
+  }
 }
 
 @mixin link() {

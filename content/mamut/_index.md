@@ -9,8 +9,8 @@ draft: false
 ## Somos
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pretium pretium tempor. Ut eget imperdiet neque. In volutpat ante semper diam molestie, et aliquam erat laoreet. Lorem ipsum dolor sit amet.
 
-* [alejandro](http://example.com/ "Descargar CV Alejandro") 
-* [nora](http://example.com/ "Descargar CV Nora")
+* [alejandro](/docs/alejandro_mur_cv_[esp].pdf "Descargar CV Alejandro") 
+* [nora](/docs/nora_cagigao_cv_[esp].pdf "Descargar CV Nora")
 
 ## Hacemos
 Diseñamos y construimos interfaces de usuario **pensando en el usuario**. 

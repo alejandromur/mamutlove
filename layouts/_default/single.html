@@ -1,12 +1,12 @@
 {{ define "main" }}
-<article class="post">
-    <section class="post-content">
+<main id="mainContent" class="post">
+    <article class="post-content">
         <header class="post-content__header">
             <time>{{ dateFormat "02/01/2006" .Date }}</time>
-            <h1>{{ .Title }}</h1>
+            <h2>{{ .Title }}</h2>
         </header>
         {{ .Content }}
         <!-- {{ .Content | replaceRE "<p>" "<p class=\"mb4 px3\">" | safeHTML }} -->
-    </section>
-</article>
+    </article>
+</main>
 {{ end }}

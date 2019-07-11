@@ -1,11 +1,11 @@
 {{ define "navigation" }}
-<nav class="nav">
+<nav class="nav" aria-label="Menú de navegación">
     <ul class="nav__list">
         <li>
             <h1>
                 <a href="/" title="Mamutlove.com">
                     <span class="sr-only">Volver a la página de inicio</span>
-                    <svg class="nav__logo" width="32" height="28">
+                    <svg class="nav__logo" width="32" height="28" aria-label="Mamutlove">
                         <use xlink:href="/images/icons/sprite.svg#mamutlove"></use>
                     </svg>
                 </a>
@@ -20,7 +20,7 @@
         </li>
         {{ end }}
         <li>
-            <button class="nav__button js-toggle-theme">
+            <button class="nav__button js-toggle-theme" aria-label="Alternar entre modo oscuro y claro">
                 <svg class="nav__button__icon-light" width="24" height="28">
                     <use xlink:href="/images/icons/sprite.svg#sun"></use>
                 </svg>

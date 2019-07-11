@@ -60,6 +60,14 @@
     border: 0;
     background-color: transparent;
 
+    &:hover,
+    &:focus {
+
+      [class*="__icon-"] {
+        color: var(--primary);
+      }
+    }
+
     &__icon-light {
       display: none;
       color: var(--secondary);
@@ -71,7 +79,7 @@
 
     &__icon-dark {
       color: var(--secondary);
-      
+
       .theme-dark & {
         display: none;
       }
