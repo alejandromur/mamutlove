@@ -7,33 +7,15 @@ draft: false
 ![Un dibujo de nosotros mismos](/images/about.svg)
 
 ## Quiénes somos
-No es fácil, ¿lo sabes tú?  
-Somos el resultado de lo vivido.  
-Materia transmórfica en evolución y cambio.  
-... Y mucha duda ...  
-
-Pero en los últimos **8 años** nuestras carreras profesionales han transcurrido en diferentes empresas con diferentes modelos de negocio como agencias de publicidad y consultoría informática, enfocadas a diferentes sectores, lo que nos ha dado la posibilidad de: 
-
-1. conocer clientes diferentes con pesos muy diferentes
-2. desarrollar en muchos tipos de proyectos y tamaños
-3. coordinar equipos de trabajo presenciales y remotos
-4. realizar sesiones de formación
-5. haber estado contra las cuerdas
-6. salir siempre impulsados hacia adelante con más fuerza aún
-
-Vamos, que estamos curtidos.
-
-...
+Lorem fistrum caballo blanco caballo negroorl ahorarr por la gloria de mi madre. Quietooor hasta luego Lucas apetecan ese que llega se calle ustée. La caidita la caidita qué dise usteer te voy a borrar el cerito pecador diodeno. Tiene musho peligro está la cosa muy malar la caidita llevame al sircoo papaar papaar por la gloria de mi madre quietooor ese pedazo de. Tiene musho peligro condemor pupita ese que llega diodenoo torpedo. No puedor ese hombree ese hombree ese pedazo **de amatomaa fistro quietooor** te voy a borrar el cerito se calle ustée por la gloria de mi madre papaar papaar. 
 
 * [alejandro](/docs/alejandro_mur_cv_[esp].pdf "Descargar CV Alejandro") 
 * [nora](/docs/nora_cagigao_cv_[esp].pdf "Descargar CV Nora")
 
 ## Hacemos
-Diseñamos y construimos interfaces de usuario **pensando en el usuario**. 
+Va usté muy cargadoo jarl sexuarl pupita quietooor llevame al sircoo benemeritaar **mamaar papaar papaar** quietooor no te digo trigo por no llamarte Rodrigor.
 
-Bla, bla, bla, **HTML, CSS, JS, Angular** consectetur adipiscing elit. Ut pretium pretium tempor, honsectetur adipiscing elit. Ut pretium pretium tempor onsectetur onsectetur onsectetur.
-
-Además ofrecemos [mentorización](http://example.com/ "Title") y [formación a particulares y empresas](http://example.com/ "Title").
+Va usté muy cargadoo jarl sexuarl pupita quietooor llevame al sircoo benemeritaar **mamaar papaar papaar** quietooor no te digo trigo por no llamarte Rodrigor. Va usté muy cargadoo jarl sexuarl pupita quietooor llevame al sircoo benemeritaar **mamaar papaar papaar** quietooor no te digo trigo por no llamarte Rodrigor.
 
 ## Estamos
-Puedes ponerte en contacto con nosotros a través de [twitter](https://twitter.com/Mamutlove "Síguenos en twitter") o por [email](mailto:hola@mamutlove.es "Escríbenos un email")
+Llevame al sircoo [twitter](https://twitter.com/Mamutlove "Síguenos en twitter") o por [email](mailto:hola@mamutlove.es "Escríbenos un email")
